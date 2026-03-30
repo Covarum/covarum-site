@@ -48,8 +48,8 @@ export default function Page() {
           </nav>
 
           <a href="#contact" className="header-cta">
-            Start a Conversation
-          </a>
+  Start Your Plan
+</a>
         </div>
       </header>
 
