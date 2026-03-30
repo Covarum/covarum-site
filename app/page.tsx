@@ -120,10 +120,10 @@ export default function Page() {
         <div className="container about-grid">
           <div className="image-frame">
             <img
-              src="/headshot.jpg"
-              alt="Tara Wallace"
-              className="headshot"
-            />
+  src="/headshot.jpg"
+  alt="Tara Wallace"
+  className="rounded-2xl"
+/>
           </div>
 
           <div className="about-copy">
