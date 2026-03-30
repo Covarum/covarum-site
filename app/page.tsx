@@ -1,136 +1,114 @@
 import Image from "next/image";
-const services = [
-  {
-    title: "Transparency",
-    description:
-      "See exactly what you have, what’s missing, and what actually matters - without the noise.",
-  },
-  {
-    title: "Protection",
-    description:
-      "Design the right structure to protect your income, your family, and everything you’re building.",
-  },
-  {
-    title: "Control",
-    description:
-      "Feel in control of your decisions, your coverage, and the path forward - with nothing left unclear.",
-  },
-];
-
-const pillars = [
-  "Clarity over complexity",
-  "Protection-first thinking",
-  "No pressure guidance",
-  "Built specifically for you",
-];
-
-const rightPanelBullets = [
-  "Protecting income and family",
-  "Avoiding coverage gaps",
-  "Making clear, confident decisions",
-  "Built around your life, not a template",
-  "Not overpaying or carrying coverage you don’t actually need",
-];
 
 export default function Page() {
+  const services = [
+    {
+      title: "Transparency",
+      description:
+        "See exactly what you have, what’s missing, and what actually matters - without the noise.",
+    },
+    {
+      title: "Protection",
+      description:
+        "Design the right structure to protect your income, your family, and everything you’re building.",
+    },
+    {
+      title: "Control",
+      description:
+        "Feel in control of your decisions, your coverage, and the path forward - with nothing left unclear.",
+    },
+  ];
+
+  const rightPanelBullets = [
+    "Protecting income and family",
+    "Avoiding coverage gaps",
+    "Making clear, confident decisions",
+    "Built around your life, not a template",
+    "Not overpaying or carrying coverage you don’t actually need",
+  ];
+
   return (
     <main className="site-shell">
-      <header className="site-header">
-        <div className="container header-inner">
-          <div>
-            <div className="brand">COVARUM</div>
-            <div className="brand-sub">Protection Solutions</div>
-          </div>
-
-          <nav className="nav">
-            <a href="#services">Solutions</a>
+      {/* NAV */}
+      <header className="nav">
+        <div className="container nav-inner">
+          <div className="logo">COVARUM</div>
+          <nav className="nav-links">
+            <a href="#solutions">Solutions</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
           </nav>
-
-          <a href="#contact" className="header-cta">
+          <a href="#contact" className="btn-primary">
             Start a Conversation
           </a>
         </div>
       </header>
 
+      {/* HERO */}
       <section className="hero">
-        <div className="hero-glow" />
         <div className="container hero-grid">
-          <div className="hero-left">
-            <div className="eyebrow">
-              Clear protection guidance for real life decisions
+          <div>
+            <div className="badge">
+              CLEAR PROTECTION GUIDANCE FOR REAL LIFE DECISIONS
             </div>
 
-            <h1 className="hero-title">
+            <h1>
               Life has a funny way of making you think you’re on track… right
               before it tells you to “recalculate.”
             </h1>
 
-            <p className="hero-copy">
+            <p className="hero-sub">
               At Covarum, we don’t just plan for where you’re going - we help
               protect you through the detours. Because the unexpected isn’t the
               exception. It’s part of the plan.
             </p>
+          </div>
 
-            <div className="hero-actions">
-              <a href="#contact" className="primary-button">
-                Start Your Plan
-              </a>
-            </div>
-
-            <div className="pillar-grid">
-              {pillars.map((item) => (
-                <div key={item} className="pillar-card">
-                  {item}
-                </div>
+          <div className="card">
+            <h4>WHAT THIS LOOKS LIKE</h4>
+            <ul>
+              {rightPanelBullets.map((item, i) => (
+                <li key={i}>{item}</li>
               ))}
-            </div>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* SERVICES */}
+      <section id="solutions" className="section">
+        <div className="container">
+          <div className="section-header">
+            <h2>How We Help</h2>
+            <p>
+              Clear, structured guidance so you know exactly where you stand and
+              what to do next.
+            </p>
           </div>
 
-          <div className="hero-right">
-            <div className="panel">
-              <div className="panel-inner">
-                <div className="panel-label">What this looks like</div>
-
-                <div className="panel-list">
-                  {rightPanelBullets.map((line) => (
-                    <div key={line} className="panel-item">
-                      <span className="dot" />
-                      <span>{line}</span>
-                    </div>
-                  ))}
-                </div>
+          <div className="services-grid">
+            {services.map((s, i) => (
+              <div key={i} className="service-card">
+                <h3>{s.title}</h3>
+                <p>{s.description}</p>
               </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
 
-      <section className="transition-section">
-        <div className="container narrow">
-          <p>
-            Most people don’t think about protection and planning until
-            something forces them to. I’ve lived through enough to know it’s
-            better to be prepared before that moment comes.
-          </p>
-        </div>
-      </section>
-
+      {/* ABOUT */}
       <section id="about" className="section">
         <div className="container about-grid">
           <div className="image-frame">
-            
-   <div className="image-frame">
-  <Image
-    src="/headshot.jpg"
-    alt="Tara Wallace"
-    width={700}
-    height={900}
-    className="headshot"
-  />
-</div>         
-
+            <Image
+              src="/headshot.jpg"
+              alt="Tara Wallace"
+              width={700}
+              height={900}
+              className="headshot"
+              priority
+            />
           </div>
 
           <div className="about-copy">
@@ -142,9 +120,9 @@ export default function Page() {
 
             <p>
               Experiences like that have a way of sharpening your perspective.
-              You get clear on what actually matters, what needs to be
-              protected, and how important it is to have the right plans in
-              place before life forces those decisions on you.
+              You get clear on what actually matters, what needs to be protected,
+              and how important it is to have the right plans in place before
+              life forces those decisions on you.
             </p>
 
             <p>
@@ -155,8 +133,8 @@ export default function Page() {
             </p>
 
             <p>
-              Because the truth is - most people aren’t lacking options.
-              They’re lacking clarity. And that’s where I come in.
+              Because the truth is - most people aren’t lacking options. They’re
+              lacking clarity. And that’s where I come in.
             </p>
 
             <p>
@@ -171,49 +149,29 @@ export default function Page() {
         </div>
       </section>
 
-      <section id="services" className="section">
+      {/* CTA */}
+      <section id="contact" className="section cta">
         <div className="container">
-          <div className="section-heading">
-            <h2>Confidence comes from clarity.</h2>
-          </div>
+          <h2>
+            You don’t need a perfect plan. You just need the right one - to
+            protect what matters most.
+          </h2>
+          <p>
+            For you, your family, and everything you’re building. We’ll simplify
+            the noise, uncover what’s missing, and make sure you’re covered -
+            wherever life takes you next.
+          </p>
 
-          <div className="services-grid">
-            {services.map((service) => (
-              <div key={service.title} className="service-card">
-                <h3>{service.title}</h3>
-                <p>{service.description}</p>
-              </div>
-            ))}
+          <div className="cta-buttons">
+            <a href="#" className="btn-primary">
+              Start Here
+            </a>
+            <a href="#" className="btn-secondary">
+              Book a Conversation
+            </a>
           </div>
         </div>
       </section>
-
-      <section id="contact" className="section section-bottom">
-        <div className="container">
-          <div className="cta-box">
-            <h2>
-              You don’t need a perfect plan. You just need the right one - to
-              protect what matters most.
-            </h2>
-
-            <p>
-              For you, your family, and everything you’re building. We’ll
-              simplify the noise, uncover what’s missing, and make sure you’re
-              covered - wherever life takes you next.
-            </p>
-
-            <div className="cta-action">
-              <a href="#contact" className="primary-button">
-                Start Your Plan
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <footer className="site-footer">
-        <div className="container footer-inner">© 2026 Covarum</div>
-      </footer>
     </main>
   );
 }
