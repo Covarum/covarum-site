@@ -119,7 +119,7 @@ export default function Page() {
       <section id="about" className="section">
         <div className="container about-grid">
           <div className="image-frame">
-            import Image from "next/image";
+            
 
 <Image
   src="/headshot.jpg"
