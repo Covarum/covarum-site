@@ -119,9 +119,13 @@ export default function Page() {
       <section id="about" className="section">
         <div className="container about-grid">
           <div className="image-frame">
-            <img
+            import Image from "next/image";
+
+<Image
   src="/headshot.jpg"
   alt="Tara Wallace"
+  width={500}
+  height={600}
   className="rounded-2xl"
 />
           </div>
