@@ -115,7 +115,7 @@ export default function CovarumWebsite() {
           <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
 
             <div className="rounded-[2rem] overflow-hidden border border-white/10">
-              <img src="/mnt/data/TW_headshot.jpg" alt="Tara Wallace" className="w-full h-full object-cover" />
+              <img src="/headshot.jpg" alt="Tara Wallace" />
             </div>
 
             <div>
