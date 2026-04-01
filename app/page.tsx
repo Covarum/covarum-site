@@ -47,7 +47,7 @@ export default function Page() {
             <a href="#contact">Contact</a>
           </nav>
 
-          <a href="#contact" className="header-cta">
+          href="https://www.covarum.com/start-your-plan"
   Start Your Plan
 </a>
         </div>
