@@ -73,7 +73,7 @@ export default function Page() {
             </p>
 
             <div className="hero-actions">
-              <a href="#contact" className="primary-button">
+              href="https://www.covarum.com/start-your-plan"
                 Start Your Plan
               </a>
             </div>
@@ -196,7 +196,7 @@ export default function Page() {
             </p>
 
             <div className="cta-action">
-              <a href="#contact" className="primary-button">
+              href="https://www.covarum.com/start-your-plan"
                 Start Your Plan
               </a>
             </div>
