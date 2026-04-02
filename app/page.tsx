@@ -48,7 +48,7 @@ export default function Page() {
           </nav>
 
           <a
-            href="https://www.covarum.com/start-your-plan"
+            href="https://www.covarum.com/start"
             className="header-cta"
           >
             Start Your Plan
@@ -77,7 +77,7 @@ export default function Page() {
 
             <div className="hero-actions">
               <a
-                href="https://www.covarum.com/start-your-plan"
+                href="https://www.covarum.com/start"
                 className="primary-button"
               >
                 Start Your Plan
@@ -203,7 +203,7 @@ export default function Page() {
 
             <div className="cta-action">
               <a
-                href="https://www.covarum.com/start-your-plan"
+                href="https://www.covarum.com/start"
                 className="primary-button"
               >
                 Start Your Plan
