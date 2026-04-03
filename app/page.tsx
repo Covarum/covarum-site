@@ -134,8 +134,8 @@ export default function Page() {
 
           <div className="about-copy">
             <p>
-              I’m a single mom of two, I’ve built businesses, led at the
-              executive level in tech, and I’ve navigated some very real life
+              I’m a mom of two, I’ve built businesses, led at the
+              executive level, and I’ve navigated very real life
               moments - including going through cancer twice.
             </p>
 
