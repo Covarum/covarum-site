@@ -71,8 +71,8 @@ export default function Page() {
 
             <p className="hero-copy">
               At Covarum, we don’t just plan for where you’re going - we help
-              protect you through the detours. Because the unexpected isn’t the
-              exception. It’s part of the plan.
+              protect you through the detours. After all, the unexpected isn't the exception. 
+              It’s part of the plan.
             </p>
 
             <div className="hero-actions">
