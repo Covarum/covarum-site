@@ -214,8 +214,29 @@ export default function Page() {
       </section>
 
       <footer className="site-footer">
-        <div className="container footer-inner">© 2026 Covarum</div>
-      </footer>
+  <div className="container footer-inner">
+    <div>© 2026 Covarum</div>
+
+    <div style={{ marginTop: "10px" }}>
+      <a
+        href="https://go.covarum.com/privacy-policy"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{ marginRight: "15px" }}
+      >
+        Privacy Policy
+      </a>
+
+      <a
+        href="https://go.covarum.com/terms--conditions"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Terms & Conditions
+      </a>
+    </div>
+  </div>
+</footer>
     </main>
   );
 }
