@@ -153,7 +153,7 @@ export default function Page() {
               <a
                 href="/solutions"
                 className="header-cta"
-                style={{ background: "transparent", color: "#ffffff" }}
+style={{ opacity: 0.7 }}
               >
                 Explore Solutions
               </a>
