@@ -1,6 +1,7 @@
 export default function AboutPage() {
   return (
     <main className="site-shell">
+      {/* HEADER */}
       <header className="site-header">
         <div className="container header-inner">
           <a href="/" style={{ display: "inline-flex", alignItems: "center" }}>
@@ -34,6 +35,7 @@ export default function AboutPage() {
         </div>
       </header>
 
+      {/* HERO */}
       <section className="hero">
         <div className="hero-glow" />
         <div className="container" style={{ padding: "88px 0 88px" }}>
@@ -71,6 +73,7 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* TRANSITION */}
       <section className="transition-section">
         <div className="container narrow">
           <p>
@@ -81,14 +84,18 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* STORY */}
       <section className="section">
         <div className="container about-grid">
           <div className="image-frame">
-            <img
-              src="/headshot.jpg"
-              alt="Tara Wallace"
-              className="headshot"
-            />
+            <a href="/team">
+              <img
+                src="/headshot.jpg"
+                alt="Tara Wallace"
+                className="headshot"
+                style={{ cursor: "pointer" }}
+              />
+            </a>
           </div>
 
           <div className="about-copy">
@@ -124,10 +131,36 @@ export default function AboutPage() {
               confident decisions around their income, family, health, and
               future.
             </p>
+
+            {/* SIGNATURE */}
+            <div style={{ marginTop: "28px" }}>
+              <div
+                style={{
+                  fontSize: "1rem",
+                  fontWeight: 500,
+                  color: "rgba(255,255,255,0.9)",
+                }}
+              >
+                Tara Wallace
+              </div>
+
+              <div
+                style={{
+                  fontSize: "0.85rem",
+                  letterSpacing: "0.12em",
+                  textTransform: "uppercase",
+                  color: "rgba(255,255,255,0.5)",
+                  marginTop: "6px",
+                }}
+              >
+                Founder, Covarum
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
+      {/* BELIEFS */}
       <section className="section" style={{ paddingTop: 0 }}>
         <div className="container">
           <div
@@ -148,8 +181,8 @@ export default function AboutPage() {
 
               <p style={{ marginTop: "16px" }}>
                 Most people do not need to be flooded with more products or more
-                noise. They need clarity, context, and someone who can help
-                them understand what fits their actual life.
+                noise. They need clarity, context, and someone who can help them
+                understand what fits their actual life.
               </p>
 
               <p>
@@ -184,7 +217,8 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="section" style={{ paddingTop: 0 }}>
+      {/* CTA */}
+      <section className="section">
         <div className="container">
           <div className="cta-box">
             <div
@@ -222,6 +256,7 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* FOOTER */}
       <footer className="site-footer">
         <div className="container footer-inner">
           <div>© 2026 Covarum</div>
