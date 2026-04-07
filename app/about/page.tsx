@@ -30,7 +30,7 @@ export default function AboutPage() {
             rel="noopener noreferrer"
             className="header-cta"
           >
-            Start Here
+            Start the Conversation
           </a>
         </div>
       </header>
