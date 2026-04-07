@@ -178,7 +178,7 @@ export default function AboutPage() {
                   textDecoration: "none",
                 }}
               >
-                Explore how I work →
+                Explore Opportunites with Covarum →
               </a>
             </div>
           </div>
