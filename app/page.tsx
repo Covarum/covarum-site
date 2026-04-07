@@ -238,9 +238,19 @@ export default function Page() {
       <section className="section">
         <div className="container">
           <div className="section-heading" style={{ textAlign: "left" }}>
-            <h2>
-              Solutions built around real life, not one-size-fits-all advice.
-            </h2>
+            <div style={{
+  fontSize: "0.8rem",
+  letterSpacing: "0.18em",
+  textTransform: "uppercase",
+  color: "rgba(255,255,255,0.6)",
+  marginBottom: "12px"
+}}>
+  Start here
+</div>
+
+<h2>
+  You don’t need a perfect plan. You just need the right one.
+</h2>
           </div>
 
           <div
