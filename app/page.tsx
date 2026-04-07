@@ -204,6 +204,7 @@ style={{ opacity: 0.7 }}
     </div>
   </div>
 </div>
+          
       </section>
 
       <section className="transition-section">
