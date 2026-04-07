@@ -160,79 +160,50 @@ style={{ opacity: 0.7 }}
             </div>
           </div>
 
-          <div className="hero-right">
-            <div className="panel">
-              <div className="panel-inner">
-                <div className="panel-label">Why Covarum</div>
+         <div className="hero-right">
+  <div className="panel">
+    <div className="panel-inner">
+      <div className="panel-label">How we work</div>
 
-                <h2
-                  style={{
-                    margin: "0 0 16px 0",
-                    fontSize: "clamp(1.8rem, 3vw, 2.8rem)",
-                    lineHeight: 1.12,
-                    letterSpacing: "-0.03em",
-                  }}
-                >
-                  Most people aren’t lacking options. They’re lacking clarity.
-                </h2>
+      <div style={{ display: "grid", gap: "16px", marginTop: "12px" }}>
+        {pillars.map((pillar) => (
+          <div
+            key={pillar.title}
+            style={{
+              borderRadius: "18px",
+              border: "1px solid rgba(255,255,255,0.08)",
+              background: "rgba(255,255,255,0.04)",
+              padding: "18px",
+            }}
+          >
+            <h3
+              style={{
+                margin: 0,
+                fontSize: "0.85rem",
+                letterSpacing: "0.18em",
+                textTransform: "uppercase",
+                color: "rgba(255,255,255,0.85)",
+              }}
+            >
+              {pillar.title}
+            </h3>
 
-                <p
-                  style={{
-                    margin: 0,
-                    color: "rgba(255,255,255,0.72)",
-                    fontSize: "1rem",
-                    lineHeight: 1.9,
-                  }}
-                >
-                  We simplify the noise, uncover what’s missing, and help you
-                  build the right structure around what actually matters.
-                </p>
-
-                <div
-                  style={{
-                    display: "grid",
-                    gridTemplateColumns: "1fr",
-                    gap: "14px",
-                    marginTop: "28px",
-                  }}
-                >
-                  {pillars.map((pillar) => (
-                    <div
-                      key={pillar.title}
-                      style={{
-                        borderRadius: "18px",
-                        border: "1px solid rgba(255,255,255,0.1)",
-                        background: "rgba(255,255,255,0.05)",
-                        padding: "16px",
-                      }}
-                    >
-                      <h3
-                        style={{
-                          margin: 0,
-                          fontSize: "0.9rem",
-                          textTransform: "uppercase",
-                          letterSpacing: "0.16em",
-                        }}
-                      >
-                        {pillar.title}
-                      </h3>
-                      <p
-                        style={{
-                          margin: "10px 0 0",
-                          color: "rgba(255,255,255,0.72)",
-                          fontSize: "0.92rem",
-                          lineHeight: 1.7,
-                        }}
-                      >
-                        {pillar.description}
-                      </p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
+            <p
+              style={{
+                margin: "10px 0 0",
+                fontSize: "0.95rem",
+                lineHeight: 1.7,
+                color: "rgba(255,255,255,0.65)",
+              }}
+            >
+              {pillar.description}
+            </p>
           </div>
-        </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</div>
       </section>
 
       <section className="transition-section">
