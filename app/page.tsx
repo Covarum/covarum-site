@@ -100,7 +100,7 @@ export default function Page() {
               src="/SVG-02.svg"
               alt="Covarum"
               style={{
-                height: "54px",
+                height: "90px",
                 width: "auto",
                 display: "block",
               }}
