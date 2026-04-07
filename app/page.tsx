@@ -92,12 +92,20 @@ const reasons = [
 export default function Page() {
   return (
     <main className="site-shell">
+      {/* HEADER WITH LOGO */}
       <header className="site-header">
         <div className="container header-inner">
-          <div>
-            <div className="brand">COVARUM</div>
-            <div className="brand-sub">Protection Solutions</div>
-          </div>
+          <a href="/" style={{ display: "inline-flex", alignItems: "center" }}>
+            <img
+              src="/SVG-02.svg"
+              alt="Covarum"
+              style={{
+                height: "54px",
+                width: "auto",
+                display: "block",
+              }}
+            />
+          </a>
 
           <nav className="nav">
             <a href="/">Home</a>
@@ -118,6 +126,7 @@ export default function Page() {
         </div>
       </header>
 
+      {/* HERO */}
       <section className="hero">
         <div className="hero-glow" />
 
@@ -219,186 +228,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="transition-section">
-        <div className="container narrow">
-          <p>
-            Most people do not need another generic recommendation. They need
-            someone to help them understand what they already have, what is
-            missing, and what is worth protecting.
-          </p>
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="container">
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "0.9fr 1.1fr",
-              gap: "40px",
-              alignItems: "start",
-            }}
-          >
-            <div>
-              <div
-                className="section-heading"
-                style={{ textAlign: "left", margin: 0 }}
-              >
-                <h2 style={{ textAlign: "left" }}>
-                  Solutions built around real life, not one-size-fits-all
-                  advice.
-                </h2>
-              </div>
-            </div>
-
-            <div>
-              <p
-                style={{
-                  margin: 0,
-                  color: "rgba(255,255,255,0.72)",
-                  fontSize: "1rem",
-                  lineHeight: 1.9,
-                }}
-              >
-                Explore the areas where Covarum can help you protect your
-                income, your family, your health, and your future.
-              </p>
-            </div>
-          </div>
-
-          <div
-            className="services-grid"
-            style={{
-              gridTemplateColumns: "repeat(3, minmax(0, 1fr))",
-              marginTop: "40px",
-            }}
-          >
-            {solutions.map((solution) => (
-              <a
-                key={solution.title}
-                href="/solutions"
-                className="service-card"
-                style={{ display: "block", textDecoration: "none" }}
-              >
-                <h3>{solution.title}</h3>
-                <p>{solution.description}</p>
-                <div
-                  style={{
-                    marginTop: "20px",
-                    fontSize: "0.82rem",
-                    textTransform: "uppercase",
-                    letterSpacing: "0.16em",
-                    color: "rgba(255,255,255,0.6)",
-                    fontWeight: 600,
-                  }}
-                >
-                  Learn More
-                </div>
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section" style={{ paddingTop: 0 }}>
-        <div className="container">
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr 1fr",
-              gap: "24px",
-            }}
-          >
-            <div className="service-card">
-              <div className="panel-label" style={{ marginBottom: "14px" }}>
-                Who we help
-              </div>
-              <h3 style={{ marginTop: 0 }}>
-                Built for where you are - and where you’re going.
-              </h3>
-
-              <div
-                style={{
-                  marginTop: "20px",
-                  display: "grid",
-                  gap: "14px",
-                }}
-              >
-                {audiences.map((audience) => (
-                  <div
-                    key={audience}
-                    style={{
-                      display: "flex",
-                      alignItems: "center",
-                      gap: "12px",
-                      color: "rgba(255,255,255,0.78)",
-                      lineHeight: 1.6,
-                    }}
-                  >
-                    <span className="dot" />
-                    <span>{audience}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div className="service-card">
-              <div className="panel-label" style={{ marginBottom: "14px" }}>
-                Why clients choose Covarum
-              </div>
-
-              <div style={{ display: "grid", gap: "20px" }}>
-                {reasons.map((reason) => (
-                  <div key={reason.title}>
-                    <h3 style={{ margin: 0, fontSize: "1.28rem" }}>
-                      {reason.title}
-                    </h3>
-                    <p style={{ marginTop: "10px" }}>{reason.description}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="about" className="section">
-        <div className="container about-grid">
-          <div className="image-frame">
-            <img
-              src="/headshot.jpg"
-              alt="Tara Wallace"
-              className="headshot"
-            />
-          </div>
-
-          <div className="about-copy">
-            <p>
-              Covarum was built on the belief that people deserve better
-              guidance, clearer conversations, and a partner who understands
-              what is actually at stake.
-            </p>
-
-            <p>
-              This is not about overwhelming you with options. It is about
-              helping you understand what fits, what matters, and what deserves
-              protection.
-            </p>
-
-            <p>
-              Most people aren’t lacking options. They’re lacking clarity. That
-              is where Covarum comes in.
-            </p>
-
-            <div style={{ marginTop: "28px" }}>
-              <a href="/about" className="primary-button">
-                Learn More About Covarum
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      {/* CTA SECTION */}
       <section id="contact" className="section section-bottom">
         <div className="container">
           <div className="cta-box">
@@ -414,7 +244,9 @@ export default function Page() {
               Start here
             </div>
 
-            <h2>You don’t need a perfect plan. You just need the right one.</h2>
+            <h2>
+              You don’t need a perfect plan. You just need the right one.
+            </h2>
 
             <p>
               Start with a conversation and get clear on what makes sense for
@@ -435,25 +267,14 @@ export default function Page() {
         </div>
       </section>
 
+      {/* FOOTER */}
       <footer className="site-footer">
         <div className="container footer-inner">
           <div>© 2026 Covarum</div>
 
           <div style={{ marginTop: "10px" }}>
-            <a
-              href="https://go.covarum.com/privacy-policy"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ marginRight: "15px" }}
-            >
-              Privacy Policy
-            </a>
-
-            <a
-              href="https://go.covarum.com/terms--conditions"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="https://go.covarum.com/privacy-policy">Privacy Policy</a>
+            <a href="https://go.covarum.com/terms--conditions">
               Terms & Conditions
             </a>
           </div>
