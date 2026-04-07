@@ -71,12 +71,18 @@ export default function ContactPage() {
       </section>
 
       {/* TRANSITION */}
-      <section className="transition-section" style={{ paddingTop: "0" }}>
+      <section
+        className="transition-section"
+        style={{ paddingTop: "0", paddingBottom: "8px" }}
+      >
         <div className="container narrow">
           <p
             style={{
-              marginTop: "16px",
-              marginBottom: "40px",
+              marginTop: "8px",
+              marginBottom: "12px",
+              fontSize: "0.95rem",
+              color: "rgba(255,255,255,0.6)",
+              textAlign: "center",
             }}
           >
             No pressure. No unnecessary complexity. Just a clear next step.
@@ -85,7 +91,7 @@ export default function ContactPage() {
       </section>
 
       {/* MAIN CONTACT OPTIONS */}
-      <section className="section">
+      <section className="section" style={{ paddingTop: "32px" }}>
         <div className="container">
           <div
             style={{
@@ -135,20 +141,17 @@ export default function ContactPage() {
 
               <p style={{ marginTop: "16px" }}>
                 If you are reaching out about potential collaboration,
-                partnering, or opportunities with Covarum, send a direct
-                message.
+                partnering, or opportunities with Covarum, start the
+                conversation here and include a few details about what you are
+                exploring.
               </p>
 
-              <div style={{ marginTop: "24px" }}>
+              <div style={{ marginTop: "28px" }}>
                 <a
-                  href="mailto:Hello@Covarum.com"
-                  style={{
-                    fontSize: "0.9rem",
-                    color: "rgba(255,255,255,0.85)",
-                    textDecoration: "none",
-                  }}
+                  href="/contact"
+                  className="primary-button"
                 >
-                  Hello@Covarum.com
+                  Connect with Covarum
                 </a>
               </div>
             </div>
@@ -208,8 +211,8 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* SUPPORTING CTA */}
-      <section className="section" style={{ paddingTop: 0 }}>
+      {/* CTA */}
+      <section className="section">
         <div className="container">
           <div className="cta-box">
             <div
@@ -224,7 +227,9 @@ export default function ContactPage() {
               Start here
             </div>
 
-            <h2>You do not need to have everything figured out before you reach out.</h2>
+            <h2>
+              You do not need to have everything figured out before you reach out.
+            </h2>
 
             <p>
               Start with a conversation and get clear on what makes sense for
