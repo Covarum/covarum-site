@@ -20,7 +20,6 @@ export default function AboutPage() {
             <a href="/">Home</a>
             <a href="/solutions">Solutions</a>
             <a href="/about">About</a>
-            <a href="/team">Team</a>
             <a href="/contact">Contact</a>
           </nav>
 
@@ -38,7 +37,7 @@ export default function AboutPage() {
       {/* HERO */}
       <section className="hero">
         <div className="hero-glow" />
-        <div className="container" style={{ padding: "88px 0 88px" }}>
+        <div className="container" style={{ padding: "88px 0" }}>
           <div className="section-heading" style={{ maxWidth: "980px" }}>
             <div className="eyebrow">About Covarum</div>
 
@@ -46,10 +45,8 @@ export default function AboutPage() {
               className="hero-title"
               style={{
                 maxWidth: "980px",
-                marginLeft: "auto",
-                marginRight: "auto",
+                margin: "24px auto 0",
                 textAlign: "center",
-                marginTop: "24px",
               }}
             >
               A more personal approach to protection and planning.
@@ -76,7 +73,12 @@ export default function AboutPage() {
       {/* TRANSITION */}
       <section className="transition-section">
         <div className="container narrow">
-          <p>
+          <p
+            style={{
+              marginTop: "48px",
+              marginBottom: "24px",
+            }}
+          >
             Most people aren’t lacking options. They’re lacking clarity. Covarum
             exists to make those decisions easier to understand, more personal,
             and more thoughtful from the start.
@@ -86,37 +88,44 @@ export default function AboutPage() {
 
       {/* STORY */}
       <section className="section">
-        <div className="container about-grid">
+        <div
+          className="container"
+          style={{
+            display: "grid",
+            gridTemplateColumns: "420px 1fr",
+            gap: "56px",
+            alignItems: "start",
+          }}
+        >
+          {/* IMAGE */}
           <div className="image-frame">
-            <a href="/team">
-              <img
-                src="/headshot.jpg"
-                alt="Tara Wallace"
-                className="headshot"
-                style={{ cursor: "pointer" }}
-              />
-            </a>
+            <img
+              src="/headshot.jpg"
+              alt="Tara Wallace"
+              className="headshot"
+            />
           </div>
 
-          <div className="about-copy">
-            <p>
+          {/* COPY */}
+          <div style={{ maxWidth: "620px" }}>
+            <p style={{ marginBottom: "18px" }}>
               My career has taken me through executive leadership roles and into
               financial services, but the moments that shaped me most did not
               come from work.
             </p>
 
-            <p>
+            <p style={{ marginBottom: "18px" }}>
               They came from life forcing me to stop, reassess, and get clear on
               what actually matters.
             </p>
 
-            <p>
+            <p style={{ marginBottom: "18px" }}>
               I have faced cancer twice, along with other major life events that
               changed the way I look at risk, planning, and what it means to
               protect the people and life you care about most.
             </p>
 
-            <p>
+            <p style={{ marginBottom: "18px" }}>
               Experiences like that change you. They strip away the noise and
               sharpen your perspective. You start to see more clearly what needs
               protection, what deserves attention, and how important it is to
@@ -124,7 +133,7 @@ export default function AboutPage() {
               decisions for you.
             </p>
 
-            <p>
+            <p style={{ marginBottom: "24px" }}>
               Today, Covarum reflects that perspective. It is not built around
               product pushing or generic recommendations. It is built around
               clear guidance, thoughtful planning, and helping people make more
@@ -133,7 +142,7 @@ export default function AboutPage() {
             </p>
 
             {/* SIGNATURE */}
-            <div style={{ marginTop: "28px" }}>
+            <div style={{ marginTop: "10px" }}>
               <div
                 style={{
                   fontSize: "1rem",
@@ -146,8 +155,8 @@ export default function AboutPage() {
 
               <div
                 style={{
-                  fontSize: "0.85rem",
-                  letterSpacing: "0.12em",
+                  fontSize: "0.8rem",
+                  letterSpacing: "0.16em",
                   textTransform: "uppercase",
                   color: "rgba(255,255,255,0.5)",
                   marginTop: "6px",
@@ -155,6 +164,22 @@ export default function AboutPage() {
               >
                 Founder, Covarum
               </div>
+            </div>
+
+            {/* SOFT CTA */}
+            <div style={{ marginTop: "20px" }}>
+              <a
+                href="/contact"
+                style={{
+                  fontSize: "0.8rem",
+                  letterSpacing: "0.18em",
+                  textTransform: "uppercase",
+                  color: "rgba(255,255,255,0.55)",
+                  textDecoration: "none",
+                }}
+              >
+                Explore how I work →
+              </a>
             </div>
           </div>
         </div>
@@ -180,9 +205,9 @@ export default function AboutPage() {
               </h3>
 
               <p style={{ marginTop: "16px" }}>
-                Most people do not need to be flooded with more products or more
-                noise. They need clarity, context, and someone who can help them
-                understand what fits their actual life.
+                Most people do not need more products or more noise. They need
+                clarity, context, and someone who can help them understand what
+                actually fits their life.
               </p>
 
               <p>
@@ -249,7 +274,7 @@ export default function AboutPage() {
                 rel="noopener noreferrer"
                 className="primary-button"
               >
-                Start Here
+                Start the Conversation
               </a>
             </div>
           </div>
