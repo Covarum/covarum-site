@@ -128,7 +128,7 @@ export default function Page() {
               You do not need more options. You need clarity.
             </h1>
 
-            <div className="hero-copy">
+            <div className="hero-copy" style={{ maxWidth: "560px" }}>
               <p>
                 Life has a funny way of making you think you’re on track… right
                 before it tells you to “recalculate.”
@@ -191,8 +191,8 @@ export default function Page() {
                 <div
                   style={{
                     display: "grid",
-                    gridTemplateColumns: "repeat(3, minmax(0, 1fr))",
-                    gap: "16px",
+                    gridTemplateColumns: "1fr",
+                    gap: "14px",
                     marginTop: "28px",
                   }}
                 >
