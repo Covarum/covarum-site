@@ -37,7 +37,7 @@ export default function AboutPage() {
       {/* HERO */}
       <section className="hero">
         <div className="hero-glow" />
-        <div className="container" style={{ padding: "88px 0" }}>
+        <div className="container" style={{ padding: "72px 0 40px" }}>
           <div className="section-heading" style={{ maxWidth: "980px" }}>
             <div className="eyebrow">About Covarum</div>
 
@@ -63,20 +63,24 @@ export default function AboutPage() {
               }}
             >
               Covarum was built on the belief that people deserve better
-              guidance, clearer conversations, and a partner who understands
-              what is actually at stake.
+              guidance, clearer conversations,
+              <br />
+              and a partner who understands what is actually at stake.
             </p>
           </div>
         </div>
       </section>
 
       {/* TRANSITION */}
-      <section className="transition-section">
+      <section
+        className="transition-section"
+        style={{ paddingTop: "0" }}
+      >
         <div className="container narrow">
           <p
             style={{
-              marginTop: "48px",
-              marginBottom: "24px",
+              marginTop: "16px",
+              marginBottom: "40px",
             }}
           >
             Most people aren’t lacking options. They’re lacking clarity. Covarum
@@ -178,7 +182,7 @@ export default function AboutPage() {
                   textDecoration: "none",
                 }}
               >
-                Explore Opportunites with Covarum →
+                Explore opportunities with Covarum →
               </a>
             </div>
           </div>
