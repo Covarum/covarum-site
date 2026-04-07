@@ -92,7 +92,6 @@ const reasons = [
 export default function Page() {
   return (
     <main className="site-shell">
-      {/* HEADER */}
       <header className="site-header">
         <div className="container header-inner">
           <div>
@@ -119,12 +118,10 @@ export default function Page() {
         </div>
       </header>
 
-      {/* HERO */}
       <section className="hero">
         <div className="hero-glow" />
 
         <div className="container hero-grid">
-          {/* LEFT */}
           <div className="hero-left">
             <div className="eyebrow">
               Protection and planning for real life.
@@ -169,7 +166,6 @@ export default function Page() {
             </div>
           </div>
 
-          {/* RIGHT */}
           <div className="hero-right">
             <div className="panel">
               <div className="panel-inner">
@@ -223,7 +219,6 @@ export default function Page() {
         </div>
       </section>
 
-      {/* TRANSITION */}
       <section className="transition-section">
         <div className="container narrow">
           <p>
@@ -234,92 +229,233 @@ export default function Page() {
         </div>
       </section>
 
-      {/* SOLUTIONS */}
       <section className="section">
         <div className="container">
-          <div className="section-heading" style={{ textAlign: "left" }}>
-            <div style={{
-  fontSize: "0.8rem",
-  letterSpacing: "0.18em",
-  textTransform: "uppercase",
-  color: "rgba(255,255,255,0.6)",
-  marginBottom: "12px"
-}}>
-  Start here
-</div>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "0.9fr 1.1fr",
+              gap: "40px",
+              alignItems: "start",
+            }}
+          >
+            <div>
+              <div
+                className="section-heading"
+                style={{ textAlign: "left", margin: 0 }}
+              >
+                <h2 style={{ textAlign: "left" }}>
+                  Solutions built around real life, not one-size-fits-all
+                  advice.
+                </h2>
+              </div>
+            </div>
 
-<h2>
-  You don’t need a perfect plan. You just need the right one.
-</h2>
+            <div>
+              <p
+                style={{
+                  margin: 0,
+                  color: "rgba(255,255,255,0.72)",
+                  fontSize: "1rem",
+                  lineHeight: 1.9,
+                }}
+              >
+                Explore the areas where Covarum can help you protect your
+                income, your family, your health, and your future.
+              </p>
+            </div>
           </div>
 
           <div
             className="services-grid"
-            style={{ marginTop: "40px" }}
+            style={{
+              gridTemplateColumns: "repeat(3, minmax(0, 1fr))",
+              marginTop: "40px",
+            }}
           >
             {solutions.map((solution) => (
               <a
                 key={solution.title}
                 href="/solutions"
                 className="service-card"
+                style={{ display: "block", textDecoration: "none" }}
               >
                 <h3>{solution.title}</h3>
                 <p>{solution.description}</p>
+                <div
+                  style={{
+                    marginTop: "20px",
+                    fontSize: "0.82rem",
+                    textTransform: "uppercase",
+                    letterSpacing: "0.16em",
+                    color: "rgba(255,255,255,0.6)",
+                    fontWeight: 600,
+                  }}
+                >
+                  Learn More
+                </div>
               </a>
             ))}
           </div>
         </div>
       </section>
 
-      {/* AUDIENCE + WHY */}
-      <section className="section">
+      <section className="section" style={{ paddingTop: 0 }}>
         <div className="container">
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "24px" }}>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr 1fr",
+              gap: "24px",
+            }}
+          >
             <div className="service-card">
-              <h3>Who we help</h3>
-              {audiences.map((a) => (
-                <p key={a}>{a}</p>
-              ))}
+              <div className="panel-label" style={{ marginBottom: "14px" }}>
+                Who we help
+              </div>
+              <h3 style={{ marginTop: 0 }}>
+                Built for where you are - and where you’re going.
+              </h3>
+
+              <div
+                style={{
+                  marginTop: "20px",
+                  display: "grid",
+                  gap: "14px",
+                }}
+              >
+                {audiences.map((audience) => (
+                  <div
+                    key={audience}
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "12px",
+                      color: "rgba(255,255,255,0.78)",
+                      lineHeight: 1.6,
+                    }}
+                  >
+                    <span className="dot" />
+                    <span>{audience}</span>
+                  </div>
+                ))}
+              </div>
             </div>
 
             <div className="service-card">
-              <h3>Why clients choose Covarum</h3>
-              {reasons.map((r) => (
-                <div key={r.title}>
-                  <strong>{r.title}</strong>
-                  <p>{r.description}</p>
-                </div>
-              ))}
+              <div className="panel-label" style={{ marginBottom: "14px" }}>
+                Why clients choose Covarum
+              </div>
+
+              <div style={{ display: "grid", gap: "20px" }}>
+                {reasons.map((reason) => (
+                  <div key={reason.title}>
+                    <h3 style={{ margin: 0, fontSize: "1.28rem" }}>
+                      {reason.title}
+                    </h3>
+                    <p style={{ marginTop: "10px" }}>{reason.description}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="section">
+      <section id="about" className="section">
+        <div className="container about-grid">
+          <div className="image-frame">
+            <img
+              src="/headshot.jpg"
+              alt="Tara Wallace"
+              className="headshot"
+            />
+          </div>
+
+          <div className="about-copy">
+            <p>
+              Covarum was built on the belief that people deserve better
+              guidance, clearer conversations, and a partner who understands
+              what is actually at stake.
+            </p>
+
+            <p>
+              This is not about overwhelming you with options. It is about
+              helping you understand what fits, what matters, and what deserves
+              protection.
+            </p>
+
+            <p>
+              Most people aren’t lacking options. They’re lacking clarity. That
+              is where Covarum comes in.
+            </p>
+
+            <div style={{ marginTop: "28px" }}>
+              <a href="/about" className="primary-button">
+                Learn More About Covarum
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" className="section section-bottom">
         <div className="container">
           <div className="cta-box">
-            <h2>You don’t need a perfect plan. You just need the right one.</h2>
-            <a
-              href="https://go.covarum.com/start-625573"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="primary-button"
+            <div
+              style={{
+                fontSize: "0.8rem",
+                letterSpacing: "0.18em",
+                textTransform: "uppercase",
+                color: "rgba(255,255,255,0.6)",
+                marginBottom: "12px",
+              }}
             >
-              Start Here
-            </a>
+              Start here
+            </div>
+
+            <h2>You don’t need a perfect plan. You just need the right one.</h2>
+
+            <p>
+              Start with a conversation and get clear on what makes sense for
+              you, your family, and everything you’re building.
+            </p>
+
+            <div className="cta-action">
+              <a
+                href="https://go.covarum.com/start-625573"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="primary-button"
+              >
+                Start Here
+              </a>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* FOOTER */}
       <footer className="site-footer">
         <div className="container footer-inner">
           <div>© 2026 Covarum</div>
 
-          <div>
-            <a href="https://go.covarum.com/privacy-policy">Privacy</a>
-            <a href="https://go.covarum.com/terms--conditions">Terms</a>
+          <div style={{ marginTop: "10px" }}>
+            <a
+              href="https://go.covarum.com/privacy-policy"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ marginRight: "15px" }}
+            >
+              Privacy Policy
+            </a>
+
+            <a
+              href="https://go.covarum.com/terms--conditions"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Terms & Conditions
+            </a>
           </div>
         </div>
       </footer>
