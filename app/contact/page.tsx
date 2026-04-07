@@ -37,7 +37,7 @@ export default function ContactPage() {
       {/* HERO */}
       <section className="hero">
         <div className="hero-glow" />
-        <div className="container" style={{ padding: "72px 0 40px" }}>
+        <div className="container" style={{ padding: "72px 0 28px" }}>
           <div className="section-heading" style={{ maxWidth: "980px" }}>
             <div className="eyebrow">Contact Covarum</div>
 
@@ -70,19 +70,16 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* TRANSITION */}
-      <section
-        className="transition-section"
-        style={{ paddingTop: "0", paddingBottom: "8px" }}
-      >
+      {/* BRIDGE LINE */}
+      <section style={{ marginTop: "-12px", marginBottom: "10px" }}>
         <div className="container narrow">
           <p
             style={{
-              marginTop: "8px",
-              marginBottom: "12px",
+              margin: "0 auto",
               fontSize: "0.95rem",
               color: "rgba(255,255,255,0.6)",
               textAlign: "center",
+              lineHeight: 1.6,
             }}
           >
             No pressure. No unnecessary complexity. Just a clear next step.
@@ -91,7 +88,7 @@ export default function ContactPage() {
       </section>
 
       {/* MAIN CONTACT OPTIONS */}
-      <section className="section" style={{ paddingTop: "32px" }}>
+      <section style={{ paddingTop: "16px", paddingBottom: "48px" }}>
         <div className="container">
           <div
             style={{
@@ -101,21 +98,30 @@ export default function ContactPage() {
               alignItems: "stretch",
             }}
           >
-            {/* PRIMARY CARD */}
-            <div className="service-card">
-              <div className="panel-label" style={{ marginBottom: "14px" }}>
-                Best next step
+            <div
+              className="service-card"
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-between",
+                minHeight: "100%",
+              }}
+            >
+              <div>
+                <div className="panel-label" style={{ marginBottom: "14px" }}>
+                  Best next step
+                </div>
+
+                <h3 style={{ marginTop: 0 }}>
+                  Ready to talk through what makes sense for you?
+                </h3>
+
+                <p style={{ marginTop: "16px" }}>
+                  The fastest way to get started is through a guided
+                  conversation. If you are looking for help around protection,
+                  planning, or next steps, begin here.
+                </p>
               </div>
-
-              <h3 style={{ marginTop: 0 }}>
-                Ready to talk through what makes sense for you?
-              </h3>
-
-              <p style={{ marginTop: "16px" }}>
-                The fastest way to get started is through a guided conversation.
-                If you are looking for help around protection, planning, or next
-                steps, begin here.
-              </p>
 
               <div style={{ marginTop: "28px" }}>
                 <a
@@ -129,27 +135,39 @@ export default function ContactPage() {
               </div>
             </div>
 
-            {/* SECONDARY CARD */}
-            <div className="service-card">
-              <div className="panel-label" style={{ marginBottom: "14px" }}>
-                Other inquiries
+            <div
+              className="service-card"
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-between",
+                minHeight: "100%",
+              }}
+            >
+              <div>
+                <div className="panel-label" style={{ marginBottom: "14px" }}>
+                  Other inquiries
+                </div>
+
+                <h3 style={{ marginTop: 0 }}>
+                  Agent, partner, or strategic opportunity?
+                </h3>
+
+                <p style={{ marginTop: "16px" }}>
+                  If you are reaching out about potential collaboration,
+                  partnering, or opportunities with Covarum, start the
+                  conversation here and include a few details about what you are
+                  exploring.
+                </p>
               </div>
-
-              <h3 style={{ marginTop: 0 }}>
-                Agent, partner, or strategic opportunity?
-              </h3>
-
-              <p style={{ marginTop: "16px" }}>
-                If you are reaching out about potential collaboration,
-                partnering, or opportunities with Covarum, start the
-                conversation here and include a few details about what you are
-                exploring.
-              </p>
 
               <div style={{ marginTop: "28px" }}>
                 <a
-                  href="/contact"
+                  href="https://go.covarum.com/start-625573"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="primary-button"
+                  style={{ opacity: 0.88 }}
                 >
                   Connect with Covarum
                 </a>
@@ -160,7 +178,7 @@ export default function ContactPage() {
       </section>
 
       {/* WHAT TO EXPECT */}
-      <section className="section" style={{ paddingTop: 0 }}>
+      <section style={{ paddingTop: "0", paddingBottom: "56px" }}>
         <div className="container">
           <div
             style={{
@@ -211,8 +229,8 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="section">
+      {/* FINAL CTA */}
+      <section style={{ paddingTop: "0", paddingBottom: "72px" }}>
         <div className="container">
           <div className="cta-box">
             <div
@@ -228,7 +246,8 @@ export default function ContactPage() {
             </div>
 
             <h2>
-              You do not need to have everything figured out before you reach out.
+              You do not need to have everything figured out before you reach
+              out.
             </h2>
 
             <p>
