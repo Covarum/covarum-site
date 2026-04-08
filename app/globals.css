@@ -2,6 +2,7 @@
   --color-bg-primary: #0f1f3d;
   --color-bg-secondary: #13264a;
   --color-bg-depth: #1a315d;
+  --color-bg-soft: #203b70;
   --color-text-primary: #ffffff;
   --color-text-secondary: #e6eaf2;
   --color-text-muted: #a7b4c8;
@@ -20,6 +21,18 @@
   --text-faint: var(--color-text-muted);
   --button-text: var(--color-bg-primary);
   --white: var(--color-text-primary);
+  --font-sans:
+    "Aptos",
+    "Segoe UI",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+  --font-display:
+    "Iowan Old Style",
+    "Palatino Linotype",
+    "Book Antiqua",
+    Georgia,
+    serif;
 }
 
 * {
@@ -36,18 +49,12 @@ body {
   padding: 0;
   background: var(--bg);
   color: var(--text);
-  font-family:
-    Inter,
-    ui-sans-serif,
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    sans-serif;
+  font-family: var(--font-sans);
 }
 
 body {
   overflow-x: hidden;
+  position: relative;
 }
 
 a {
@@ -63,6 +70,34 @@ img {
 .site-shell {
   min-height: 100vh;
   background: var(--bg);
+  position: relative;
+  isolation: isolate;
+}
+
+.site-shell::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background:
+    radial-gradient(circle at 12% 8%, rgba(201, 169, 110, 0.06), transparent 24%),
+    radial-gradient(circle at 88% 14%, rgba(32, 59, 112, 0.22), transparent 30%),
+    radial-gradient(circle at 50% 100%, rgba(19, 38, 74, 0.85), transparent 46%),
+    linear-gradient(180deg, #102244 0%, #0f1f3d 42%, #102246 100%);
+  pointer-events: none;
+}
+
+.site-shell::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.018) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.018) 1px, transparent 1px);
+  background-size: 120px 120px;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.85));
+  pointer-events: none;
 }
 
 .container {
@@ -79,8 +114,10 @@ img {
   top: 0;
   z-index: 50;
   border-bottom: 1px solid var(--border-soft);
-  background: rgba(15, 31, 61, 0.94);
+  background:
+    linear-gradient(180deg, rgba(19, 38, 74, 0.97), rgba(15, 31, 61, 0.95));
   backdrop-filter: blur(12px);
+  box-shadow: 0 18px 50px rgba(8, 17, 35, 0.18);
 }
 
 .header-inner {
@@ -90,6 +127,16 @@ img {
   justify-content: space-between;
   gap: 24px;
   padding: 18px 0;
+}
+
+.header-inner::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(201, 169, 110, 0.32), transparent);
 }
 
 .header-brand {
@@ -122,6 +169,7 @@ img {
   gap: 32px;
   font-size: 0.95rem;
   color: var(--text-faint);
+  letter-spacing: 0.02em;
 }
 
 .nav a:hover,
@@ -146,10 +194,11 @@ img {
 
 .header-cta {
   border: 1px solid var(--border-soft);
-  background: rgba(255, 255, 255, 0.04);
+  background: linear-gradient(180deg, rgba(26, 49, 93, 0.72), rgba(19, 38, 74, 0.76));
   color: var(--text);
   padding: 12px 16px;
   font-size: 0.92rem;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 
 .primary-button {
@@ -157,6 +206,7 @@ img {
   color: var(--button-text);
   padding: 16px 24px;
   font-size: 1rem;
+  box-shadow: 0 14px 28px rgba(13, 24, 46, 0.22);
 }
 
 .primary-button:hover {
@@ -234,12 +284,37 @@ img {
   overflow: hidden;
 }
 
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 32px auto 56px max(24px, calc((100vw - 1120px) / 2));
+  width: 1px;
+  background: linear-gradient(180deg, rgba(201, 169, 110, 0), rgba(201, 169, 110, 0.42), rgba(201, 169, 110, 0));
+  pointer-events: none;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 88px;
+  right: max(24px, calc((100vw - 1120px) / 2));
+  width: 320px;
+  height: 320px;
+  border-radius: 999px;
+  border: 1px solid rgba(201, 169, 110, 0.12);
+  background:
+    radial-gradient(circle at 35% 35%, rgba(201, 169, 110, 0.08), transparent 28%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+  pointer-events: none;
+}
+
 .hero-glow {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(circle at top right, rgba(26, 49, 93, 0.4), transparent 42%),
-    radial-gradient(circle at bottom left, rgba(19, 38, 74, 0.44), transparent 38%);
+    radial-gradient(circle at top right, rgba(26, 49, 93, 0.5), transparent 42%),
+    radial-gradient(circle at 18% 22%, rgba(201, 169, 110, 0.08), transparent 18%),
+    radial-gradient(circle at bottom left, rgba(19, 38, 74, 0.5), transparent 38%);
   pointer-events: none;
 }
 
@@ -249,7 +324,7 @@ img {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
   gap: 48px;
-  padding: 88px 0 112px;
+  padding: 108px 0 132px;
 }
 
 .eyebrow {
@@ -269,22 +344,23 @@ img {
   max-width: 900px;
   margin: 20px 0 0;
   font-size: clamp(2.4rem, 5vw, 4.35rem);
-  line-height: 1.12;
-  font-weight: 600;
-  letter-spacing: -0.03em;
+  line-height: 1.05;
+  font-weight: 500;
+  letter-spacing: -0.035em;
   text-wrap: balance;
+  font-family: var(--font-display);
 }
 
 .hero-copy {
   max-width: 760px;
-  margin-top: 24px;
+  margin-top: 30px;
   font-size: clamp(1.05rem, 1.6vw, 1.28rem);
-  line-height: 1.9;
+  line-height: 1.95;
   color: var(--text-soft);
 }
 
 .hero-actions {
-  margin-top: 36px;
+  margin-top: 42px;
 }
 
 .pillar-grid {
@@ -317,6 +393,22 @@ img {
   background: linear-gradient(180deg, rgba(19, 38, 74, 0.98), rgba(15, 31, 61, 0.96));
   padding: 24px;
   backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(8, 17, 35, 0.16);
+}
+
+.panel::before,
+.service-card::before,
+.cta-box::before,
+.image-frame::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(135deg, rgba(201, 169, 110, 0.08), transparent 32%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.035), transparent 28%);
+  pointer-events: none;
 }
 
 .panel-inner {
@@ -324,6 +416,7 @@ img {
   border: 1px solid var(--border);
   background: var(--panel-strong);
   padding: 24px;
+  position: relative;
 }
 
 .panel-label {
@@ -373,6 +466,18 @@ img {
 
 .section {
   padding: 80px 0;
+  position: relative;
+}
+
+.section::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: min(1120px, calc(100% - 48px));
+  height: 1px;
+  transform: translateX(-50%);
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.08), transparent);
 }
 
 .about-grid,
@@ -392,6 +497,8 @@ img {
   border-radius: 32px;
   border: 1px solid var(--border);
   background: rgba(19, 38, 74, 0.88);
+  position: relative;
+  box-shadow: 0 24px 52px rgba(8, 17, 35, 0.16);
 }
 
 .headshot {
@@ -422,10 +529,11 @@ img {
 .cta-box h2 {
   margin: 0;
   font-size: clamp(2rem, 4vw, 3.4rem);
-  line-height: 1.15;
-  font-weight: 600;
+  line-height: 1.08;
+  font-weight: 500;
   letter-spacing: -0.03em;
   text-wrap: balance;
+  font-family: var(--font-display);
 }
 
 .services-grid {
@@ -457,13 +565,17 @@ img {
   border: 1px solid var(--border);
   background: linear-gradient(180deg, rgba(19, 38, 74, 0.98), rgba(15, 31, 61, 0.96));
   padding: 28px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 22px 52px rgba(8, 17, 35, 0.12);
 }
 
 .service-card h3 {
   margin: 0;
-  font-size: 1.75rem;
-  font-weight: 600;
+  font-size: 1.72rem;
+  font-weight: 500;
   text-wrap: balance;
+  font-family: var(--font-display);
 }
 
 .service-card p {
@@ -484,6 +596,9 @@ img {
   background: linear-gradient(180deg, rgba(19, 38, 74, 0.98), rgba(15, 31, 61, 0.98));
   padding: 40px;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 26px 64px rgba(8, 17, 35, 0.14);
 }
 
 .cta-box p {
@@ -503,6 +618,7 @@ img {
 .site-footer {
   border-top: 1px solid var(--border);
   padding: 28px 0;
+  background: linear-gradient(180deg, rgba(15, 31, 61, 0), rgba(9, 19, 39, 0.18));
 }
 
 .footer-inner {
@@ -598,7 +714,7 @@ img {
 
   .hero-grid {
     gap: 32px;
-    padding: 64px 0 80px;
+    padding: 76px 0 88px;
   }
 
   .nav {
@@ -610,6 +726,12 @@ img {
 
   .hero-actions {
     justify-content: center;
+  }
+
+  .hero::before,
+  .hero::after,
+  .section::before {
+    display: none;
   }
 
   .hero-copy {
