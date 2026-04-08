@@ -875,8 +875,13 @@ img {
   line-height: 1.9;
 }
 
-.insurance-contact-block {
+.insurance-cta-trust-line {
+  margin: 16px auto 0;
+  max-width: 420px;
   text-align: center;
+  color: var(--text-faint);
+  font-size: 0.92rem;
+  line-height: 1.8;
 }
 
 .site-footer {
@@ -1082,7 +1087,6 @@ img {
     font-size: 1rem;
   }
 
-  .insurance-contact-block h2,
   .solution-hero .hero-title,
   .insurance-heading-left h2 {
     max-width: none;

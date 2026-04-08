@@ -476,28 +476,12 @@ export default function LifeInsurancePage() {
                 rel="noopener noreferrer"
                 className="primary-button"
               >
-                Schedule Your Complimentary Conversation
+                Start the Conversation
               </a>
             </div>
-          </div>
-
-          <div className="service-card insurance-contact-block">
-            <div className="panel-label">Contact</div>
-            <h2>Let's make this simple.</h2>
-            <p>
-              Start with a conversation. We'll help you understand what matters
-              and what actually makes sense.
+            <p className="insurance-cta-trust-line">
+              No pressure. Just clarity around what actually makes sense.
             </p>
-            <div className="insurance-action-row">
-              <a
-                href="https://go.covarum.com/start-625573"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="primary-button"
-              >
-                Connect With Covarum
-              </a>
-            </div>
           </div>
         </div>
       </section>
