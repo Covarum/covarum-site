@@ -1007,6 +1007,237 @@ img {
   line-height: 1.8;
 }
 
+.join-page .section {
+  padding: 68px 0;
+}
+
+.join-page .section-bottom {
+  padding-top: 18px;
+  padding-bottom: 84px;
+}
+
+.join-section .section-heading {
+  max-width: 860px;
+}
+
+.join-heading-left {
+  margin: 0;
+  text-align: left;
+}
+
+.join-section-intro {
+  max-width: 720px;
+  margin: 18px auto 0;
+  color: var(--text-soft);
+  font-size: 1.04rem;
+  line-height: 1.9;
+}
+
+.join-narrow {
+  max-width: 900px;
+}
+
+.join-hero {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.35), rgba(5, 15, 33, 0.58)),
+    url("/images/covarum-dock.jpg");
+  background-size: cover;
+  background-position: 44% 58%;
+  background-repeat: no-repeat;
+}
+
+.join-hero::before {
+  background:
+    linear-gradient(180deg, rgba(5, 13, 28, 0.08) 0%, rgba(5, 13, 28, 0.1) 38%, rgba(5, 13, 28, 0.3) 100%),
+    linear-gradient(90deg, rgba(5, 13, 28, 0.48) 0%, rgba(5, 13, 28, 0.16) 36%, rgba(5, 13, 28, 0.16) 100%);
+}
+
+.join-hero .hero-glow {
+  background:
+    linear-gradient(90deg, rgba(7, 17, 36, 0.56) 0%, rgba(7, 17, 36, 0.24) 42%, rgba(7, 17, 36, 0.14) 100%),
+    radial-gradient(circle at top right, rgba(26, 49, 93, 0.24), transparent 42%);
+}
+
+.join-hero-grid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  padding: 112px 0 132px;
+}
+
+.join-hero-copy {
+  max-width: 600px;
+  padding-left: 42px;
+}
+
+.join-hero-copy .hero-title {
+  max-width: 10ch;
+}
+
+.join-hero-subheadline {
+  max-width: 34ch;
+  margin: 24px 0 0;
+  color: var(--text);
+  font-size: clamp(1.1rem, 1.8vw, 1.34rem);
+  line-height: 1.85;
+}
+
+.join-hero-supporting {
+  margin: 18px 0 0;
+  max-width: 38ch;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 1rem;
+  line-height: 1.85;
+}
+
+.join-hero-actions {
+  justify-content: flex-start;
+}
+
+.join-audience-section {
+  padding-top: 54px;
+}
+
+.join-audience-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 42px;
+}
+
+.join-audience-card,
+.join-pillar-card {
+  min-height: 100%;
+}
+
+.join-audience-card h3,
+.join-pillar-card h3 {
+  margin-top: 0;
+}
+
+.join-audience-card p {
+  max-width: 31ch;
+}
+
+.join-open-door {
+  max-width: 620px;
+  margin: 44px auto 0;
+  text-align: center;
+}
+
+.join-open-door h3 {
+  margin: 0;
+  color: var(--text);
+  font-size: 1.45rem;
+  font-weight: 500;
+  font-family: var(--font-display);
+}
+
+.join-open-door p {
+  margin: 12px 0 0;
+  color: var(--text-soft);
+  line-height: 1.85;
+}
+
+.join-pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.join-pillar-card p {
+  margin-top: 14px;
+  max-width: 28ch;
+}
+
+.join-image-break {
+  position: relative;
+  overflow: hidden;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.25), rgba(6, 15, 29, 0.38)),
+    url("/images/covarum-life.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.join-image-break::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(9, 21, 43, 0.12) 0%, rgba(9, 21, 43, 0.06) 42%, rgba(9, 21, 43, 0.16) 100%);
+  pointer-events: none;
+}
+
+.join-image-break-copy {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 148px 0;
+  text-align: center;
+}
+
+.join-image-break-copy h2 {
+  margin: 0;
+  color: var(--text);
+  font-size: clamp(2.3rem, 4.2vw, 4rem);
+  line-height: 1.12;
+  font-weight: 500;
+  letter-spacing: -0.035em;
+  font-family: var(--font-display);
+}
+
+.join-copy-block {
+  max-width: 760px;
+  margin-top: 18px;
+}
+
+.join-copy-block p {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: 1.03rem;
+  line-height: 1.95;
+}
+
+.join-copy-block p + p {
+  margin-top: 18px;
+}
+
+.join-copy-block p:first-child,
+.join-copy-block p:last-child {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.join-final-section .cta-box {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.join-final-cta p {
+  max-width: 700px;
+}
+
+.join-final-actions {
+  margin-top: 28px;
+}
+
+.join-final-link {
+  margin-top: 18px !important;
+  color: var(--text-faint);
+  font-size: 0.96rem;
+}
+
+.join-final-link a {
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 0.16em;
+}
+
 .site-footer {
   border-top: 1px solid var(--border);
   padding: 28px 0;
@@ -1094,6 +1325,16 @@ img {
     max-width: none;
   }
 
+  .join-hero-grid,
+  .join-audience-grid,
+  .join-pillars-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .join-hero-copy {
+    padding-left: 0;
+  }
+
   .headshot {
     min-height: 420px;
   }
@@ -1128,6 +1369,47 @@ img {
   .hero-grid {
     gap: 32px;
     padding: 76px 0 88px;
+  }
+
+  .join-page .section {
+    padding: 52px 0;
+  }
+
+  .join-page .section-bottom {
+    padding-top: 12px;
+    padding-bottom: 68px;
+  }
+
+  .join-hero {
+    background-position: 34% center;
+  }
+
+  .join-hero-grid {
+    padding: 82px 0 96px;
+  }
+
+  .join-hero-copy .hero-title {
+    max-width: none;
+  }
+
+  .join-image-break {
+    background-position: 56% center;
+  }
+
+  .join-image-break-copy {
+    padding: 92px 0;
+  }
+
+  .join-image-break-copy h2 {
+    font-size: clamp(2rem, 10vw, 2.8rem);
+  }
+
+  .join-open-door {
+    margin-top: 32px;
+  }
+
+  .join-final-link {
+    font-size: 0.92rem;
   }
 
   .hero-home {
