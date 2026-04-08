@@ -90,20 +90,21 @@ img {
 }
 
 .header-logo {
-  width: 100%;
-  max-width: none;
+  width: auto;
+  max-width: 100%;
   height: auto;
   display: block;
 }
 
 .header-brand-site {
-  width: min(100%, 332px);
-  height: 96px;
-  overflow: hidden;
+  width: auto;
+  max-width: min(100%, 420px);
 }
 
 .header-logo-site {
-  width: 176%;
+  width: auto;
+  height: 96px;
+  max-width: min(100%, 420px);
 }
 
 .nav {
@@ -571,14 +572,14 @@ img {
   }
 
   .header-brand-site {
-    width: min(82vw, 300px);
-    height: 92px;
-    overflow: hidden;
-    justify-content: center;
+    width: auto;
+    max-width: min(88vw, 360px);
   }
 
   .header-logo-site {
-    width: 206%;
+    width: auto;
+    height: 78px;
+    max-width: min(88vw, 360px);
   }
 
   .hero-grid {
