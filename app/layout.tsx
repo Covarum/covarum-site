@@ -4,7 +4,12 @@ import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Covarum",
-  description: "Protection Solutions"
+  description: "Protection Solutions",
+  icons: {
+    icon: "/icon.png",
+    shortcut: "/icon.png",
+    apple: "/icon.png",
+  },
 };
 
 export default function RootLayout({
