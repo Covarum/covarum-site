@@ -647,6 +647,19 @@ img {
   padding: 108px 0 132px;
 }
 
+.insurance-page .section {
+  padding: 56px 0;
+}
+
+.insurance-page .section-bottom {
+  padding-top: 12px;
+  padding-bottom: 80px;
+}
+
+.insurance-page .insurance-hero-grid {
+  padding: 92px 0 88px;
+}
+
 .insurance-hero-copy {
   padding-left: 42px;
   max-width: 760px;
@@ -668,7 +681,7 @@ img {
 }
 
 .insurance-trust-line {
-  margin: 20px 0 0;
+  margin: 16px 0 0;
   max-width: 640px;
   color: var(--text-faint);
   font-size: 0.98rem;
@@ -676,12 +689,12 @@ img {
 }
 
 .insurance-hero-panel {
-  margin-top: 40px;
+  margin-top: 24px;
 }
 
 .insurance-section-stack {
   display: grid;
-  gap: 28px;
+  gap: 20px;
 }
 
 .insurance-heading-left {
@@ -694,7 +707,7 @@ img {
 }
 
 .insurance-section-intro {
-  margin: 18px 0 0;
+  margin: 14px 0 0;
   color: var(--text-soft);
   font-size: 1.02rem;
   line-height: 1.85;
@@ -731,7 +744,7 @@ img {
 
 .insurance-emphasis,
 .insurance-closing-line {
-  margin: 24px 0 0;
+  margin: 18px 0 0;
   color: var(--text);
   font-size: 1rem;
   line-height: 1.85;
@@ -739,7 +752,7 @@ img {
 }
 
 .insurance-services-grid {
-  margin-top: 48px;
+  margin-top: 32px;
 }
 
 .insurance-two-column {
@@ -750,7 +763,7 @@ img {
 
 .insurance-options-grid,
 .insurance-faq-grid {
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .insurance-card-lead {
@@ -777,12 +790,12 @@ img {
 }
 
 .insurance-action-row {
-  margin-top: 28px;
+  margin-top: 22px;
 }
 
 .insurance-steps-grid {
   grid-template-columns: repeat(5, minmax(0, 1fr));
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .insurance-step-card {
@@ -799,12 +812,12 @@ img {
 
 .insurance-closing-stack {
   display: grid;
-  gap: 24px;
+  gap: 18px;
 }
 
 .insurance-closing-copy {
   max-width: 700px;
-  margin: 16px auto 0;
+  margin: 12px auto 0;
   line-height: 1.9;
 }
 
@@ -928,6 +941,15 @@ img {
   .insurance-hero-grid {
     gap: 28px;
     padding: 76px 0 88px;
+  }
+
+  .insurance-page .section {
+    padding: 46px 0;
+  }
+
+  .insurance-page .section-bottom {
+    padding-top: 8px;
+    padding-bottom: 64px;
   }
 
   .hero-left {

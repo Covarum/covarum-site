@@ -109,7 +109,7 @@ const faqItems = [
 
 export default function LifeInsurancePage() {
   return (
-    <main className="site-shell">
+    <main className="site-shell insurance-page">
       <header className="site-header">
         <div className="container header-inner">
           <a href="/" className="header-brand header-brand-site">
@@ -194,8 +194,8 @@ export default function LifeInsurancePage() {
                 ))}
               </div>
               <p className="insurance-emphasis">
-                If you earn $150K+ or have dependents, you likely need a plan in
-                place.
+                If someone depends on you or your income supports a plan, you
+                likely need coverage in place.
               </p>
             </div>
           </aside>
