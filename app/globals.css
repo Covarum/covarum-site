@@ -97,13 +97,13 @@ img {
 }
 
 .header-brand-home {
-  width: min(100%, 360px);
-  height: 118px;
+  width: min(100%, 340px);
+  height: 104px;
   overflow: hidden;
 }
 
 .header-logo-home {
-  width: 205%;
+  width: 184%;
 }
 
 .header-brand-subpage {
@@ -589,8 +589,8 @@ img {
   }
 
   .header-brand-home {
-    width: min(78vw, 290px);
-    height: 104px;
+    width: min(82vw, 300px);
+    height: 96px;
     overflow: hidden;
     justify-content: center;
   }
@@ -603,7 +603,7 @@ img {
   }
 
   .header-logo-home {
-    width: 248%;
+    width: 214%;
   }
 
   .header-logo-subpage {

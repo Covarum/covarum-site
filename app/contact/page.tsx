@@ -4,7 +4,7 @@ export default function ContactPage() {
       {/* HEADER */}
       <header className="site-header">
         <div className="container header-inner">
-          <a href="/" className="header-brand header-brand-subpage">
+          <a href="/" className="header-brand header-brand-home">
             <img
               src="/Transparent-01.png"
               alt="Covarum"
@@ -16,7 +16,6 @@ export default function ContactPage() {
             <a href="/">Home</a>
             <a href="/solutions">Solutions</a>
             <a href="/about">About</a>
-            <a href="/team">Team</a>
             <a href="/contact">Contact</a>
           </nav>
 

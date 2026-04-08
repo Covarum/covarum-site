@@ -107,7 +107,6 @@ export default function Page() {
             <a href="/">Home</a>
             <a href="/solutions">Solutions</a>
             <a href="/about">About</a>
-            <a href="/team">Team</a>
             <a href="/contact">Contact</a>
           </nav>
 
