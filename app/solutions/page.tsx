@@ -3,6 +3,8 @@ const solutions = [
     title: "Life Insurance",
     description:
       "Protect the people who depend on you and create a plan that fits your real life.",
+    href: "/solutions/life-insurance",
+    action: "Explore life insurance planning",
   },
   {
     title: "Mortgage Protection",
@@ -194,18 +196,15 @@ export default function SolutionsPage() {
                 <h3>{solution.title}</h3>
                 <p>{solution.description}</p>
 
-                <div
-                  style={{
-                    marginTop: "20px",
-                    fontSize: "0.82rem",
-                    textTransform: "uppercase",
-                    letterSpacing: "0.16em",
-                    color: "rgba(255,255,255,0.6)",
-                    fontWeight: 600,
-                  }}
-                >
-                  Individual page coming soon
-                </div>
+                {solution.href ? (
+                  <div className="service-card-action">
+                    <a href={solution.href} className="header-cta">
+                      {solution.action}
+                    </a>
+                  </div>
+                ) : (
+                  <div className="service-card-status">Individual page coming soon</div>
+                )}
               </div>
             ))}
           </div>
