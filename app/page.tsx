@@ -97,7 +97,7 @@ export default function Page() {
         <div className="container header-inner">
           <a href="/" className="header-brand header-brand-home">
             <img
-              src="/SVG-01.svg"
+              src="/Transparent-01.png"
               alt="Covarum"
               className="header-logo header-logo-home"
             />

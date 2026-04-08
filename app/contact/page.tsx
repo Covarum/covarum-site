@@ -6,7 +6,7 @@ export default function ContactPage() {
         <div className="container header-inner">
           <a href="/" className="header-brand header-brand-subpage">
             <img
-              src="/SVG-01.svg"
+              src="/Transparent-01.png"
               alt="Covarum"
               className="header-logo header-logo-subpage"
             />
