@@ -1118,16 +1118,38 @@ img {
   }
 
   .insurance-flip-card {
+    min-height: auto;
     perspective: none;
   }
 
+  .insurance-flip-card > summary {
+    pointer-events: none;
+  }
+
+  .insurance-flip-card-inner {
+    min-height: auto;
+    cursor: default;
+    transform: none !important;
+  }
+
   .insurance-flip-card:hover .insurance-flip-card-inner,
-  .insurance-flip-card:focus-within .insurance-flip-card-inner {
+  .insurance-flip-card:focus-within .insurance-flip-card-inner,
+  .insurance-flip-card[open] .insurance-flip-card-inner {
     transform: none;
   }
 
-  .insurance-flip-card[open] .insurance-flip-card-inner {
-    transform: rotateY(180deg);
+  .insurance-flip-face {
+    position: relative;
+    inset: auto;
+    min-height: auto;
+  }
+
+  .insurance-flip-front {
+    display: none;
+  }
+
+  .insurance-flip-back {
+    transform: none;
   }
 
   .insurance-example-section {
