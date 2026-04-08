@@ -194,34 +194,6 @@ export default function JoinCovarumPage() {
         </div>
       </section>
 
-      <section className="section join-section" style={{ paddingTop: 0 }}>
-        <div className="container join-narrow">
-          <div className="section-heading join-heading-left">
-            <h2>You&apos;ll Work Directly With Me</h2>
-          </div>
-
-          <div className="join-copy-block">
-            <p>
-              I have worked inside large, structured environments. I understand
-              what they can offer - and where they can start to limit people.
-            </p>
-            <p>
-              Covarum is being built intentionally. For the right person, it
-              offers more room to grow, more ownership over the process, and a
-              more personal way to build something that matters.
-            </p>
-            <p>
-              Sometimes that leads to a role. Sometimes something more flexible.
-              Sometimes something we build together.
-            </p>
-            <p>
-              If we connect, it will be a real conversation - direct,
-              thoughtful, and focused on fit.
-            </p>
-          </div>
-        </div>
-      </section>
-
       <section className="section section-bottom join-final-section">
         <div className="container">
           <div className="cta-box join-final-cta">
