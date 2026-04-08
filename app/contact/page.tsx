@@ -1,3 +1,5 @@
+import { INTRO_CALL_URL, JOIN_COVARUM_URL } from "../ctaLinks";
+
 export default function ContactPage() {
   return (
     <main className="site-shell">
@@ -20,7 +22,7 @@ export default function ContactPage() {
           </nav>
 
           <a
-            href="https://go.covarum.com/start-625573"
+            href={INTRO_CALL_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="header-cta"
@@ -121,7 +123,7 @@ export default function ContactPage() {
 
               <div style={{ marginTop: "28px" }}>
                 <a
-                  href="https://go.covarum.com/start-625573"
+                  href={INTRO_CALL_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="primary-button"
@@ -159,7 +161,7 @@ export default function ContactPage() {
 
               <div style={{ marginTop: "28px" }}>
                 <a
-                  href="https://go.covarum.com/start-625573"
+                  href={JOIN_COVARUM_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="primary-button"
@@ -253,7 +255,7 @@ export default function ContactPage() {
 
             <div className="cta-action">
               <a
-                href="https://go.covarum.com/start-625573"
+                href={INTRO_CALL_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="primary-button"

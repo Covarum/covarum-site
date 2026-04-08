@@ -1,3 +1,5 @@
+import { INTRO_CALL_URL } from "../ctaLinks";
+
 const solutions = [
   {
     title: "Life Insurance",
@@ -99,7 +101,7 @@ export default function SolutionsPage() {
           </nav>
 
           <a
-            href="https://go.covarum.com/start-625573"
+            href={INTRO_CALL_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="header-cta"
@@ -152,7 +154,7 @@ export default function SolutionsPage() {
               }}
             >
               <a
-                href="https://go.covarum.com/start-625573"
+                href={INTRO_CALL_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="primary-button"
@@ -324,7 +326,7 @@ export default function SolutionsPage() {
 
             <div className="cta-action">
               <a
-                href="https://go.covarum.com/start-625573"
+                href={INTRO_CALL_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="primary-button"

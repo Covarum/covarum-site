@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { INTRO_CALL_URL } from "../../ctaLinks";
 
 export const metadata: Metadata = {
   title: "Life Insurance Planning | Covarum",
@@ -130,7 +131,7 @@ export default function LifeInsurancePage() {
           </nav>
 
           <a
-            href="https://go.covarum.com/start-625573"
+            href={INTRO_CALL_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="header-cta"
@@ -158,7 +159,7 @@ export default function LifeInsurancePage() {
 
             <div className="hero-actions insurance-hero-actions">
               <a
-                href="https://go.covarum.com/start-625573"
+                href={INTRO_CALL_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="primary-button"
@@ -167,7 +168,7 @@ export default function LifeInsurancePage() {
               </a>
 
               <a
-                href="https://go.covarum.com/start-625573"
+                href={INTRO_CALL_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="header-cta hero-secondary-cta"
@@ -415,7 +416,7 @@ export default function LifeInsurancePage() {
             <p>The value is in knowing the difference.</p>
             <div className="insurance-action-row">
               <a
-                href="https://go.covarum.com/start-625573"
+                href={INTRO_CALL_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="primary-button"
@@ -478,7 +479,7 @@ export default function LifeInsurancePage() {
             </p>
             <div className="cta-action">
               <a
-                href="https://go.covarum.com/start-625573"
+                href={INTRO_CALL_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="primary-button"
