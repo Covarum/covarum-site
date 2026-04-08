@@ -97,6 +97,7 @@ export default function SolutionsPage() {
             <a href="/">Home</a>
             <a href="/solutions">Solutions</a>
             <a href="/about">About</a>
+            <a href="/join-covarum">Join Covarum</a>
             <a href="/contact">Contact</a>
           </nav>
 
