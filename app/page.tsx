@@ -122,7 +122,7 @@ export default function Page() {
       </header>
 
       {/* HERO */}
-      <section className="hero">
+      <section className="hero hero-home">
         <div className="hero-glow" />
 
         <div className="container hero-grid">
