@@ -81,11 +81,11 @@ export default function SolutionsPage() {
     <main className="site-shell">
       <header className="site-header">
         <div className="container header-inner">
-          <a href="/" className="header-brand header-brand-home">
+          <a href="/" className="header-brand header-brand-site">
             <img
-              src="/Transparent-01.png"
+              src="/optimized-logo.png"
               alt="Covarum"
-              className="header-logo header-logo-home"
+              className="header-logo header-logo-site"
             />
           </a>
 
