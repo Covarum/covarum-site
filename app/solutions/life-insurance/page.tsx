@@ -356,7 +356,7 @@ export default function LifeInsurancePage() {
 
       <section className="section insurance-example-section">
         <div className="container">
-          <article className="insurance-example-highlight">
+          <article className="service-card insurance-example-highlight">
             <div className="panel-label">
               Real example (what families are really protecting)
             </div>
