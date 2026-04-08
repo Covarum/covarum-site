@@ -163,7 +163,7 @@ export default function LifeInsurancePage() {
                 rel="noopener noreferrer"
                 className="primary-button"
               >
-                Schedule a Private Consultation
+                Schedule Your Complimentary Conversation
               </a>
 
               <a
@@ -451,7 +451,7 @@ export default function LifeInsurancePage() {
                 rel="noopener noreferrer"
                 className="primary-button"
               >
-                Schedule a Conversation
+                Schedule Your Complimentary Conversation
               </a>
             </div>
           </div>
