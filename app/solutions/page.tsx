@@ -81,15 +81,11 @@ export default function SolutionsPage() {
     <main className="site-shell">
       <header className="site-header">
         <div className="container header-inner">
-          <a href="/" style={{ display: "inline-flex", alignItems: "center" }}>
+          <a href="/" className="header-brand header-brand-site">
             <img
-              src="/SVG-02.svg"
+              src="/optimized-logo.png"
               alt="Covarum"
-              style={{
-                height: "54px",
-                width: "auto",
-                display: "block",
-              }}
+              className="header-logo header-logo-site"
             />
           </a>
 
@@ -97,7 +93,6 @@ export default function SolutionsPage() {
             <a href="/">Home</a>
             <a href="/solutions">Solutions</a>
             <a href="/about">About</a>
-            <a href="/team">Team</a>
             <a href="/contact">Contact</a>
           </nav>
 
