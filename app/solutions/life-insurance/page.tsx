@@ -207,12 +207,12 @@ export default function LifeInsurancePage() {
           <div className="section-heading insurance-heading-left">
             <div className="panel-label">What are you protecting?</div>
             <h2>Start with what would need to continue.</h2>
-            <p className="insurance-section-intro">
-              Before policies, we look at:
-            </p>
           </div>
 
           <div className="service-card insurance-card-slim">
+            <p className="insurance-section-intro insurance-card-intro">
+              Before policies, we look at:
+            </p>
             <div className="insurance-list insurance-list-large">
               {protectionPoints.map((item) => (
                 <div key={item} className="insurance-list-item">
@@ -237,10 +237,17 @@ export default function LifeInsurancePage() {
 
           <div className="services-grid insurance-services-grid">
             {whyCoverage.map((item) => (
-              <article key={item.title} className="service-card">
-                <h3>{item.title}</h3>
-                <p>{item.description}</p>
-              </article>
+              <details key={item.title} className="insurance-flip-card">
+                <summary className="insurance-flip-card-inner">
+                  <div className="insurance-flip-face insurance-flip-front">
+                    <h3>{item.title}</h3>
+                  </div>
+                  <div className="insurance-flip-face insurance-flip-back">
+                    <div className="insurance-flip-label">{item.title}</div>
+                    <p>{item.description}</p>
+                  </div>
+                </summary>
+              </details>
             ))}
           </div>
         </div>

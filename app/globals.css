@@ -713,6 +713,11 @@ img {
   line-height: 1.85;
 }
 
+.insurance-card-intro {
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
 .insurance-card-slim {
   max-width: 760px;
 }
@@ -753,6 +758,98 @@ img {
 
 .insurance-services-grid {
   margin-top: 32px;
+}
+
+.insurance-flip-card {
+  position: relative;
+  min-height: 210px;
+  perspective: 1200px;
+}
+
+.insurance-flip-card > summary {
+  list-style: none;
+}
+
+.insurance-flip-card > summary::-webkit-details-marker {
+  display: none;
+}
+
+.insurance-flip-card-inner {
+  position: relative;
+  display: block;
+  min-height: 210px;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: transform 0.55s ease;
+}
+
+.insurance-flip-card:hover .insurance-flip-card-inner,
+.insurance-flip-card[open] .insurance-flip-card-inner,
+.insurance-flip-card:focus-within .insurance-flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.insurance-flip-face {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 210px;
+  border-radius: 32px;
+  border: 1px solid var(--border);
+  background: linear-gradient(180deg, rgba(19, 38, 74, 0.98), rgba(15, 31, 61, 0.96));
+  padding: 28px;
+  box-shadow: 0 22px 52px rgba(8, 17, 35, 0.12);
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+
+.insurance-flip-face::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(135deg, rgba(201, 169, 110, 0.08), transparent 32%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.035), transparent 28%);
+  pointer-events: none;
+}
+
+.insurance-flip-front h3,
+.insurance-flip-back p,
+.insurance-flip-label {
+  position: relative;
+  z-index: 1;
+}
+
+.insurance-flip-front h3 {
+  margin: 0;
+  font-size: 1.72rem;
+  font-weight: 500;
+  text-wrap: balance;
+  font-family: var(--font-display);
+}
+
+.insurance-flip-back {
+  transform: rotateY(180deg);
+  justify-content: center;
+}
+
+.insurance-flip-label {
+  margin: 0 0 12px;
+  color: var(--text-faint);
+  font-size: 0.8rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.insurance-flip-back p {
+  margin: 0;
+  color: var(--text);
+  font-size: 1.04rem;
+  line-height: 1.8;
+  max-width: 20ch;
 }
 
 .insurance-two-column {
@@ -961,6 +1058,12 @@ img {
     margin-top: 0;
   }
 
+  .insurance-flip-card,
+  .insurance-flip-card-inner,
+  .insurance-flip-face {
+    min-height: 180px;
+  }
+
   .insurance-example-highlight {
     max-width: none;
   }
@@ -1013,6 +1116,19 @@ img {
   .insurance-page .section-bottom {
     padding-top: 8px;
     padding-bottom: 64px;
+  }
+
+  .insurance-flip-card {
+    perspective: none;
+  }
+
+  .insurance-flip-card:hover .insurance-flip-card-inner,
+  .insurance-flip-card:focus-within .insurance-flip-card-inner {
+    transform: none;
+  }
+
+  .insurance-flip-card[open] .insurance-flip-card-inner {
+    transform: rotateY(180deg);
   }
 
   .insurance-example-section {
@@ -1111,6 +1227,21 @@ img {
 
   .service-card h3 {
     font-size: 1.45rem;
+  }
+
+  .insurance-flip-face {
+    border-radius: 24px;
+    padding: 24px;
+  }
+
+  .insurance-flip-front h3 {
+    font-size: 1.45rem;
+  }
+
+  .insurance-flip-back p {
+    max-width: none;
+    font-size: 1rem;
+    line-height: 1.75;
   }
 
   .headshot {
