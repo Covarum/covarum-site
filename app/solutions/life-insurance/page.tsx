@@ -194,8 +194,8 @@ export default function LifeInsurancePage() {
                 ))}
               </div>
               <p className="insurance-emphasis">
-                If someone depends on you or your income supports a plan, you
-                likely need coverage in place.
+                If someone depends on you, or your income supports the life
+                you're building, you likely need coverage in place.
               </p>
             </div>
           </aside>
