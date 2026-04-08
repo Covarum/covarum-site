@@ -100,7 +100,7 @@ export default function AboutPage() {
           {/* IMAGE */}
           <div className="image-frame">
             <img
-              src="/headshot.jpg"
+              src="/tara-wallace-headshot_v2.webp"
               alt="Tara Wallace"
               className="headshot"
             />
