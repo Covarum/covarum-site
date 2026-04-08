@@ -59,9 +59,9 @@ const childPolicyFit = [
 const layeredFit = ["Term for now", "Permanent for long-term"];
 
 const examplePoints = [
-  "$1.5M term coverage for income protection",
-  "Smaller permanent policy for long-term flexibility",
-  "Coverage structured so the surviving spouse has time, not pressure",
+  "Income protection for the years that mattered most",
+  "Support for the mortgage and major expenses",
+  "Long-term flexibility beyond the immediate crisis",
 ];
 
 const processSteps = [
@@ -347,14 +347,32 @@ export default function LifeInsurancePage() {
         </div>
       </section>
 
-      <section className="section">
-        <div className="container insurance-two-column">
-          <article className="cta-box insurance-example-box">
-            <div className="panel-label">Real example (how this actually looks)</div>
-            <p className="insurance-section-intro">
-              A family with two young kids and a mortgage:
+      <section className="section insurance-example-section">
+        <div className="container">
+          <article className="insurance-example-highlight">
+            <div className="panel-label">
+              Real example (what families are really protecting)
+            </div>
+
+            <p className="insurance-example-intro">
+              A family with two kids, a mortgage, and a busy life wanted to
+              answer one question clearly:
             </p>
-            <div className="insurance-list insurance-list-left">
+
+            <div className="insurance-example-questions">
+              <p className="insurance-example-question">
+                If one of us died, what would happen next?
+              </p>
+              <p>Would the surviving spouse need to sell the house?</p>
+              <p>Would income disruption change everything?</p>
+              <p>Would grief also become a financial emergency?</p>
+            </div>
+
+            <p className="insurance-example-transition">
+              Their coverage was built to help prevent that.
+            </p>
+
+            <div className="insurance-list insurance-example-list">
               {examplePoints.map((item) => (
                 <div key={item} className="insurance-list-item">
                   <span className="dot" />
@@ -362,12 +380,19 @@ export default function LifeInsurancePage() {
                 </div>
               ))}
             </div>
-            <p className="insurance-closing-line">
-              This is what good planning looks like - simple, intentional, and
-              built around real life.
+
+            <p className="insurance-example-closing">
+              The goal was not just to leave money behind.
+            </p>
+            <p className="insurance-example-closing insurance-example-closing-final">
+              It was to protect stability, time, and options.
             </p>
           </article>
+        </div>
+      </section>
 
+      <section className="section">
+        <div className="container">
           <article className="service-card">
             <div className="panel-label">Need a second opinion?</div>
             <h3>You do not need to start from scratch to make a smart decision.</h3>

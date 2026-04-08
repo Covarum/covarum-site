@@ -781,12 +781,66 @@ img {
   font-weight: 600;
 }
 
-.insurance-example-box {
-  text-align: left;
+.insurance-example-section {
+  padding: 72px 0;
 }
 
-.insurance-example-box .panel-label {
-  margin-bottom: 16px;
+.insurance-example-highlight {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 44px 40px;
+  background: rgba(19, 38, 74, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.insurance-example-intro {
+  margin: 18px 0 0;
+  max-width: 42ch;
+  color: var(--text-soft);
+  line-height: 1.95;
+}
+
+.insurance-example-questions {
+  margin-top: 24px;
+  display: grid;
+  gap: 14px;
+}
+
+.insurance-example-question {
+  margin: 0;
+  color: var(--text);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.insurance-example-questions p {
+  margin: 0;
+  max-width: 38ch;
+  color: var(--text-soft);
+  line-height: 1.95;
+}
+
+.insurance-example-transition {
+  margin: 28px 0 0;
+  color: var(--text);
+  line-height: 1.9;
+}
+
+.insurance-example-list {
+  margin-top: 22px;
+  gap: 16px;
+}
+
+.insurance-example-closing {
+  margin: 28px 0 0;
+  color: var(--text-soft);
+  line-height: 1.95;
+}
+
+.insurance-example-closing-final {
+  margin-top: 8px;
+  color: var(--text);
 }
 
 .insurance-action-row {
@@ -902,6 +956,10 @@ img {
     margin-top: 0;
   }
 
+  .insurance-example-highlight {
+    max-width: none;
+  }
+
   .headshot {
     min-height: 420px;
   }
@@ -950,6 +1008,10 @@ img {
   .insurance-page .section-bottom {
     padding-top: 8px;
     padding-bottom: 64px;
+  }
+
+  .insurance-example-section {
+    padding: 56px 0;
   }
 
   .hero-left {
@@ -1024,6 +1086,18 @@ img {
   .solution-hero .hero-title,
   .insurance-heading-left h2 {
     max-width: none;
+  }
+
+  .insurance-example-highlight {
+    padding: 30px 24px;
+  }
+
+  .insurance-example-questions {
+    gap: 12px;
+  }
+
+  .insurance-example-list {
+    gap: 14px;
   }
 
   .insurance-action-row .primary-button,
