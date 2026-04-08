@@ -327,6 +327,10 @@ img {
   padding: 108px 0 132px;
 }
 
+.hero-left {
+  padding-left: 42px;
+}
+
 .eyebrow {
   display: inline-flex;
   align-items: center;
@@ -715,6 +719,10 @@ img {
   .hero-grid {
     gap: 32px;
     padding: 76px 0 88px;
+  }
+
+  .hero-left {
+    padding-left: 0;
   }
 
   .nav {
