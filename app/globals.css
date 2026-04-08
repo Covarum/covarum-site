@@ -158,12 +158,18 @@ img {
   font-size: 1rem;
 }
 
-.desktop-copy {
-  display: inline;
-}
-
-.mobile-copy {
+.hero-secondary-mobile {
   display: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.04);
+  padding: 11px 16px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
 }
 
 .hero-secondary-cta {
@@ -663,16 +669,12 @@ img {
     width: 100%;
   }
 
-  .hero-secondary-cta {
-    width: 100%;
-  }
-
-  .desktop-copy {
+  .hero-secondary-desktop {
     display: none;
   }
 
-  .mobile-copy {
-    display: inline;
+  .hero-secondary-mobile {
+    display: inline-flex;
   }
 
   .service-card h3 {

@@ -162,11 +162,17 @@ export default function Page() {
 
               <a
                 href="/solutions"
-                className="header-cta hero-secondary-cta"
+                className="header-cta hero-secondary-cta hero-secondary-desktop"
                 style={{ opacity: 0.7 }}
               >
-                <span className="desktop-copy">Explore Solutions</span>
-                <span className="mobile-copy">Start the Conversation</span>
+                Explore Solutions
+              </a>
+
+              <a
+                href="/about"
+                className="hero-secondary-mobile"
+              >
+                Learn More About Covarum
               </a>
             </div>
           </div>
