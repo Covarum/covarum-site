@@ -157,20 +157,13 @@ export default function Page() {
                 rel="noopener noreferrer"
                 className="primary-button"
               >
-                Start Here
-              </a>
-
-              <a
-                href="/solutions"
-                className="header-cta hero-secondary-cta hero-secondary-desktop"
-                style={{ opacity: 0.7 }}
-              >
-                Explore Solutions
+                Start the Conversation
               </a>
 
               <a
                 href="/about"
-                className="hero-secondary-mobile"
+                className="header-cta hero-secondary-cta"
+                style={{ opacity: 0.7 }}
               >
                 Learn More About Covarum
               </a>
