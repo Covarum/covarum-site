@@ -50,12 +50,12 @@ const pillars = [
   {
     title: "Transparency",
     description:
-      "See exactly what you have, what’s missing, and what actually matters - without the noise.",
+      "See exactly what you have, what's missing, and what actually matters - without the noise.",
   },
   {
     title: "Protection",
     description:
-      "Design the right structure to protect your income, your family, and everything you’re building.",
+      "Design the right structure to protect your income, your family, and everything you're building.",
   },
   {
     title: "Control",
@@ -95,15 +95,11 @@ export default function Page() {
       {/* HEADER WITH LOGO */}
       <header className="site-header">
         <div className="container header-inner">
-          <a href="/" style={{ display: "inline-flex", alignItems: "center" }}>
+          <a href="/" className="header-brand">
             <img
-              src="/SVG-02.svg"
+              src="/SVG-01.svg"
               alt="Covarum"
-              style={{
-                height: "130px",
-                width: "auto",
-                display: "block",
-              }}
+              className="header-logo header-logo-home"
             />
           </a>
 
@@ -142,13 +138,13 @@ export default function Page() {
 
             <div className="hero-copy" style={{ maxWidth: "560px" }}>
               <p>
-                Life has a funny way of making you think you’re on track… right
-                before it tells you to “recalculate.”
+                Life has a funny way of making you think you're on track... right
+                before it tells you to "recalculate."
               </p>
               <p>
-                At Covarum, we don’t just plan for where you’re going - we help
+                At Covarum, we don't just plan for where you're going - we help
                 protect you through the detours. After all, the unexpected isn't
-                the exception. It’s part of the plan.
+                the exception. It's part of the plan.
               </p>
             </div>
 
@@ -167,10 +163,11 @@ export default function Page() {
 
               <a
                 href="/solutions"
-                className="header-cta"
+                className="header-cta hero-secondary-cta"
                 style={{ opacity: 0.7 }}
               >
-                Explore Solutions
+                <span className="desktop-copy">Explore Solutions</span>
+                <span className="mobile-copy">Start the Conversation</span>
               </a>
             </div>
           </div>
@@ -245,12 +242,12 @@ export default function Page() {
             </div>
 
             <h2>
-              You don’t need a perfect plan. You just need the right one.
+              You don't need a perfect plan. You just need the right one.
             </h2>
 
             <p>
               Start with a conversation and get clear on what makes sense for
-              you, your family, and everything you’re building.
+              you, your family, and everything you're building.
             </p>
 
             <div className="cta-action">
@@ -270,7 +267,7 @@ export default function Page() {
       {/* FOOTER */}
       <footer className="site-footer">
         <div className="container footer-inner">
-          <div>© 2026 Covarum</div>
+          <div>Copyright 2026 Covarum</div>
 
           <div style={{ marginTop: "10px" }}>
             <a href="https://go.covarum.com/privacy-policy">Privacy Policy</a>

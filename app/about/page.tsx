@@ -4,15 +4,11 @@ export default function AboutPage() {
       {/* HEADER */}
       <header className="site-header">
         <div className="container header-inner">
-          <a href="/" style={{ display: "inline-flex", alignItems: "center" }}>
+          <a href="/" className="header-brand">
             <img
-              src="/SVG-02.svg"
+              src="/SVG-01.svg"
               alt="Covarum"
-              style={{
-                height: "54px",
-                width: "auto",
-                display: "block",
-              }}
+              className="header-logo header-logo-subpage"
             />
           </a>
 
@@ -20,6 +16,7 @@ export default function AboutPage() {
             <a href="/">Home</a>
             <a href="/solutions">Solutions</a>
             <a href="/about">About</a>
+            <a href="/team">Team</a>
             <a href="/contact">Contact</a>
           </nav>
 
@@ -83,7 +80,7 @@ export default function AboutPage() {
               marginBottom: "40px",
             }}
           >
-            Most people aren’t lacking options. They’re lacking clarity. Covarum
+            Most people aren't lacking options. They're lacking clarity. Covarum
             exists to make those decisions easier to understand, more personal,
             and more thoughtful from the start.
           </p>
@@ -182,7 +179,7 @@ export default function AboutPage() {
                   textDecoration: "none",
                 }}
               >
-                Explore opportunities with Covarum →
+                Explore opportunities with Covarum
               </a>
             </div>
           </div>
@@ -288,7 +285,7 @@ export default function AboutPage() {
       {/* FOOTER */}
       <footer className="site-footer">
         <div className="container footer-inner">
-          <div>© 2026 Covarum</div>
+          <div>Copyright 2026 Covarum</div>
 
           <div style={{ marginTop: "10px" }}>
             <a
