@@ -95,7 +95,7 @@ export default function Page() {
       {/* HEADER WITH LOGO */}
       <header className="site-header">
         <div className="container header-inner">
-          <a href="/" className="header-brand">
+          <a href="/" className="header-brand header-brand-home">
             <img
               src="/SVG-01.svg"
               alt="Covarum"

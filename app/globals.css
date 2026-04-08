@@ -577,14 +577,30 @@ img {
     margin: 0 auto;
   }
 
+  .header-brand-home {
+    width: min(78vw, 290px);
+    height: 86px;
+    overflow: hidden;
+    justify-content: center;
+  }
+
+  .header-brand-subpage {
+    width: min(66vw, 240px);
+    height: 64px;
+    overflow: hidden;
+    justify-content: center;
+  }
+
   .header-logo-home {
-    height: clamp(88px, 22vw, 116px);
-    max-width: min(100%, 320px);
+    width: 188%;
+    max-width: none;
+    height: auto;
   }
 
   .header-logo-subpage {
-    height: clamp(58px, 15vw, 74px);
-    max-width: min(100%, 220px);
+    width: 172%;
+    max-width: none;
+    height: auto;
   }
 
   .hero-grid {

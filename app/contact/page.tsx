@@ -4,7 +4,7 @@ export default function ContactPage() {
       {/* HEADER */}
       <header className="site-header">
         <div className="container header-inner">
-          <a href="/" className="header-brand">
+          <a href="/" className="header-brand header-brand-subpage">
             <img
               src="/SVG-01.svg"
               alt="Covarum"
