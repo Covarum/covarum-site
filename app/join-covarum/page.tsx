@@ -217,7 +217,8 @@ export default function JoinCovarumPage() {
             </div>
 
             <p className="join-final-link">
-              Prefer to reach out first? <a href="/contact">Contact us</a>
+              Prefer to reach out first?{" "}
+              <a href="mailto:tara@covarum.com">Contact us</a>
             </p>
           </div>
         </div>
