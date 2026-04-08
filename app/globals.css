@@ -578,13 +578,13 @@ img {
   }
 
   .header-logo-home {
-    height: clamp(64px, 16vw, 84px);
-    max-width: min(100%, 250px);
+    height: clamp(88px, 22vw, 116px);
+    max-width: min(100%, 320px);
   }
 
   .header-logo-subpage {
-    height: clamp(46px, 12vw, 58px);
-    max-width: min(100%, 180px);
+    height: clamp(58px, 15vw, 74px);
+    max-width: min(100%, 220px);
   }
 
   .hero-grid {
