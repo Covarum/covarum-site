@@ -118,8 +118,10 @@ export default function JoinCovarumPage() {
             <div className="panel-label">Who this is for</div>
             <h2>There Are Three Ways People Come Into Covarum</h2>
             <p className="join-section-intro">
-              Different starting points. Same intention - to build something
-              meaningful.
+              <span className="join-intro-line">Different starting points.</span>{" "}
+              <span className="join-intro-line">
+                Same intention - to build something meaningful.
+              </span>
             </p>
           </div>
 

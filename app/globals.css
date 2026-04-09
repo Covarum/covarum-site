@@ -1033,6 +1033,10 @@ img {
   line-height: 1.9;
 }
 
+.join-intro-line {
+  display: inline;
+}
+
 .join-narrow {
   max-width: 900px;
 }
@@ -1386,6 +1390,10 @@ img {
 
   .join-hero-grid {
     padding: 82px 0 96px;
+  }
+
+  .join-intro-line {
+    display: block;
   }
 
   .join-hero-copy .hero-title {
