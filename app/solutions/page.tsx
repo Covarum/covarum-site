@@ -3,6 +3,8 @@ const solutions = [
     title: "Life Insurance",
     description:
       "Protect the people who depend on you and create a plan that fits your real life.",
+    href: "/solutions/life-insurance",
+    cta: "Explore life insurance planning",
   },
   {
     title: "Mortgage Protection",
@@ -77,6 +79,20 @@ const audiences = [
   "Business owners managing risk",
   "Individuals preparing for retirement",
 ];
+
+const cardCtaStyle = {
+  display: "inline-flex",
+  alignItems: "center",
+  justifyContent: "center",
+  borderRadius: "18px",
+  border: "1px solid rgba(255,255,255,0.15)",
+  background: "rgba(30, 47, 78, 0.78)",
+  color: "#ffffff",
+  padding: "12px 20px",
+  fontSize: "0.92rem",
+  fontWeight: 600,
+  lineHeight: 1.2,
+};
 
 export default function SolutionsPage() {
   return (
@@ -207,7 +223,7 @@ export default function SolutionsPage() {
                   }}
                 >
                   {solution.href ? (
-                    <a href={solution.href} className="primary-button">
+                    <a href={solution.href} style={cardCtaStyle}>
                       {solution.cta}
                     </a>
                   ) : (
