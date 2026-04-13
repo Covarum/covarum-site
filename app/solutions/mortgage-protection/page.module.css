@@ -194,7 +194,7 @@
   }
 
   .heroTitle {
-    max-width: 12ch;
+    max-width: 14ch;
   }
 
   .heroBody,
@@ -204,6 +204,10 @@
   .approachText {
     font-size: 0.98rem;
     line-height: 1.76;
+  }
+
+  .heroCopy {
+    max-width: none;
   }
 
   .heroActions,
