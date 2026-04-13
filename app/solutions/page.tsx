@@ -1,17 +1,15 @@
-import { INTRO_CALL_URL } from "../ctaLinks";
-
 const solutions = [
   {
     title: "Life Insurance",
     description:
       "Protect the people who depend on you and create a plan that fits your real life.",
-    href: "/solutions/life-insurance",
-    action: "Explore life insurance planning",
   },
   {
     title: "Mortgage Protection",
     description:
       "Help protect your home and your family's stability if something happens to you.",
+    href: "/solutions/mortgage-protection",
+    cta: "Explore mortgage protection planning",
   },
   {
     title: "Health Insurance",
@@ -85,11 +83,15 @@ export default function SolutionsPage() {
     <main className="site-shell">
       <header className="site-header">
         <div className="container header-inner">
-          <a href="/" className="header-brand header-brand-site">
+          <a href="/" style={{ display: "inline-flex", alignItems: "center" }}>
             <img
-              src="/optimized-logo.png"
+              src="/SVG-02.svg"
               alt="Covarum"
-              className="header-logo header-logo-site"
+              style={{
+                height: "54px",
+                width: "auto",
+                display: "block",
+              }}
             />
           </a>
 
@@ -97,12 +99,12 @@ export default function SolutionsPage() {
             <a href="/">Home</a>
             <a href="/solutions">Solutions</a>
             <a href="/about">About</a>
-            <a href="/join-covarum">Join Covarum</a>
+            <a href="/team">Team</a>
             <a href="/contact">Contact</a>
           </nav>
 
           <a
-            href={INTRO_CALL_URL}
+            href="https://go.covarum.com/start-625573"
             target="_blank"
             rel="noopener noreferrer"
             className="header-cta"
@@ -155,7 +157,7 @@ export default function SolutionsPage() {
               }}
             >
               <a
-                href={INTRO_CALL_URL}
+                href="https://go.covarum.com/start-625573"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="primary-button"
@@ -199,15 +201,22 @@ export default function SolutionsPage() {
                 <h3>{solution.title}</h3>
                 <p>{solution.description}</p>
 
-                {solution.href ? (
-                  <div className="service-card-action">
-                    <a href={solution.href} className="header-cta">
-                      {solution.action}
-                    </a>
-                  </div>
-                ) : (
-                  <div className="service-card-status">Individual page coming soon</div>
-                )}
+                <div
+                  style={{
+                    marginTop: "20px",
+                    fontSize: "0.82rem",
+                    textTransform: "uppercase",
+                    letterSpacing: "0.16em",
+                    color: "rgba(255,255,255,0.6)",
+                    fontWeight: 600,
+                  }}
+                >
+                  {solution.href ? (
+                    <a href={solution.href}>{solution.cta}</a>
+                  ) : (
+                    "Individual page coming soon"
+                  )}
+                </div>
               </div>
             ))}
           </div>
@@ -327,7 +336,7 @@ export default function SolutionsPage() {
 
             <div className="cta-action">
               <a
-                href={INTRO_CALL_URL}
+                href="https://go.covarum.com/start-625573"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="primary-button"
