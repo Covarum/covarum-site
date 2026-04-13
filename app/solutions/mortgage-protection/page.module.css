@@ -12,6 +12,8 @@
 
 .heroTitle {
   max-width: 11ch;
+  font-size: clamp(2.45rem, 5vw, 4.2rem);
+  line-height: 1.08;
 }
 
 .heroBody {
@@ -185,16 +187,23 @@
     max-width: none;
     margin-left: 0;
   }
+
+  .reviewCopy,
+  .reviewLead {
+    max-width: none;
+  }
 }
 
 @media (max-width: 640px) {
   .heroGrid {
-    gap: 28px;
-    padding: 64px 0 72px;
+    gap: 24px;
+    padding: 56px 0 64px;
   }
 
   .heroTitle {
     max-width: 14ch;
+    font-size: clamp(2.2rem, 12vw, 3.25rem);
+    line-height: 1.04;
   }
 
   .heroBody,
@@ -216,30 +225,58 @@
     gap: 12px;
   }
 
+  .heroBody {
+    margin-top: 18px;
+    max-width: none;
+  }
+
   .cardGrid,
   .exampleStack,
   .faqStack {
-    margin-top: 28px;
+    margin-top: 24px;
   }
 
   .supportCard,
   .exampleCard,
   .faqCard,
   .checkCard {
-    padding: 22px;
+    padding: 20px;
   }
 
   .supportCard h3,
   .exampleCard h3,
   .faqCard h3 {
-    font-size: 1.24rem;
+    font-size: 1.18rem;
   }
 
   .reviewTitle {
-    margin-top: 18px;
+    margin-top: 16px;
   }
 
   .reviewSide {
-    gap: 18px;
+    gap: 16px;
+  }
+
+  .reviewLead {
+    margin-top: 16px;
+  }
+
+  .checkList {
+    gap: 14px;
+  }
+
+  .checkItem {
+    gap: 10px;
+    line-height: 1.6;
+  }
+
+  .checkDot {
+    margin-top: 7px;
+  }
+
+  .exampleText p + p,
+  .heroBody p + p,
+  .approachText p + p {
+    margin-top: 14px;
   }
 }
