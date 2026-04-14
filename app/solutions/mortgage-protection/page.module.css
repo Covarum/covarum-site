@@ -8,6 +8,7 @@
 
 .heroCopy {
   max-width: 620px;
+  padding-left: clamp(24px, 3vw, 42px);
 }
 
 .heroTitle {
@@ -191,6 +192,10 @@
   .reviewCopy,
   .reviewLead {
     max-width: none;
+  }
+
+  .heroCopy {
+    padding-left: 0;
   }
 }
 
