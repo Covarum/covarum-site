@@ -1,1 +1,245 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Covarify - Synthetic Review Demo</title><style>:root{--p:#6f3df4;--ink:#20172c;--muted:#6d6677;--line:#e8e4ee;--soft:#f7f5fb;--good:#137a54;--warn:#a05a00}*{box-sizing:border-box}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:#fff}.banner{background:#fff4cf;border-bottom:1px solid #ead58a;padding:10px 18px;text-align:center;font-size:13px;font-weight:700}.shell{max-width:1100px;margin:0 auto;padding:22px}.brand{display:flex;align-items:center;justify-content:space-between;gap:18px}.logo{font-weight:900;letter-spacing:.16em;font-size:22px}.sub{font-size:13px;color:var(--muted)}.tech{border:1px solid var(--line);background:white;padding:10px 14px;border-radius:10px;cursor:pointer;color:var(--p);font-weight:800}.hero{padding:34px 0 18px}.hero h1{font-size:38px;line-height:1.05;margin:0 0 10px}.hero p{max-width:760px;color:var(--muted);font-size:17px;line-height:1.55}.tabs{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;border-bottom:1px solid var(--line);padding-bottom:12px}.tab{border:1px solid var(--line);background:var(--soft);padding:12px 8px;border-radius:10px;font-weight:800;cursor:pointer}.tab.active{background:var(--p);color:#fff;border-color:var(--p)}.view{display:none;padding:26px 0}.view.active{display:block}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.card{border:1px solid var(--line);border-radius:16px;padding:18px;background:#fff;box-shadow:0 3px 14px rgba(39,27,58,.04)}.card h3{margin:0 0 8px;font-size:18px}.eyebrow{font-size:12px;font-weight:900;letter-spacing:.08em;color:var(--p);text-transform:uppercase}.big{font-size:30px;font-weight:900;margin:8px 0}.muted{color:var(--muted)}.pill{display:inline-block;padding:5px 9px;border-radius:999px;background:var(--soft);font-size:12px;font-weight:800}.good{color:var(--good)}.warn{color:var(--warn)}button.action{border:0;border-radius:10px;padding:10px 13px;background:var(--p);color:#fff;font-weight:800;cursor:pointer}button.secondary{border:1px solid var(--line);border-radius:10px;padding:9px 12px;background:#fff;color:var(--ink);font-weight:800;cursor:pointer}.accounts{display:grid;gap:10px}.account{display:grid;grid-template-columns:1fr auto;gap:12px;padding:14px;border:1px solid var(--line);border-radius:12px}.amount{font-weight:900}.askbox{display:flex;gap:10px;margin-top:12px}.askbox input{flex:1;border:1px solid var(--line);border-radius:10px;padding:12px;font-size:15px}.answer{margin-top:14px;padding:16px;border-radius:12px;background:var(--soft);display:none}.decision{display:flex;align-items:flex-start;justify-content:space-between;gap:14px}.decision.done{opacity:.62}.docs{display:grid;gap:10px}.doc{border:1px solid var(--line);border-radius:12px;padding:14px}.watermark{font-size:11px;font-weight:900;color:#8a4aa0;text-transform:uppercase}.modal{position:fixed;inset:0;background:rgba(15,10,23,.55);display:none;align-items:center;justify-content:center;padding:24px}.modal.open{display:flex}.panel{max-width:760px;width:100%;max-height:85vh;overflow:auto;background:#fff;border-radius:18px;padding:22px}.panel h2{margin-top:0}.stack{display:grid;gap:10px}.stack div{padding:12px;border:1px solid var(--line);border-radius:10px}.footer{border-top:1px solid var(--line);padding:18px 0 30px;color:var(--muted);font-size:12px}@media(max-width:760px){.grid{grid-template-columns:1fr}.tabs{grid-template-columns:repeat(2,1fr)}.hero h1{font-size:30px}}</style></head><body><div class="banner">SYNTHETIC REVIEW ENVIRONMENT - no real people, accounts, documents, credentials, or bank connections.</div><main class="shell"><div class="brand"><div><div class="logo">COVARIFY</div><div class="sub">Financial Clarity - Understand what matters.</div></div><button class="tech" onclick="showTech()">Technical overview</button></div><section class="hero"><div class="eyebrow">Brian Purnell technical/product review</div><h1>A living financial strategy for your whole life.</h1><p>This standalone synthetic review demonstrates the Covarify product direction without exposing founder financial data or connecting to production systems. The interactions below are local to this page.</p></section><nav class="tabs"><button class="tab active" data-view="today">Today</button><button class="tab" data-view="money">Money</button><button class="tab" data-view="ask">Ask</button><button class="tab" data-view="decisions">Decisions</button><button class="tab" data-view="you">You</button></nav><section id="today" class="view active"><div class="grid"><div class="card"><div class="eyebrow">Most important today</div><h3>Pay down high-interest debt without draining your safety net</h3><div class="big">$6,480</div><p class="muted">Rewards Credit - 24.99% APR scenario. Emergency savings currently $18,750.</p><p><strong>One next move:</strong> make a defined $750 extra payment, then review the next statement and cash buffer.</p><button class="action" onclick="openDecision('card')">Review decision</button></div><div class="card"><div class="eyebrow">Goal progress</div><h3>Family trip</h3><div class="big">$4,200 / $6,000</div><p class="muted">$1,800 remaining. Current plan: continue a $200 monthly transfer without adding credit-card debt.</p><span class="pill good">On a clear path</span></div><div class="card"><div class="eyebrow">Completed</div><h3>Duplicate streaming subscription</h3><p class="muted">Harbor Stream Classic was identified as the obsolete duplicate.</p><span class="pill good">Completed</span></div><div class="card"><div class="eyebrow">Connection health</div><h3>One item needs review</h3><p class="muted">Pioneer Demo Lending shows a recoverable connection warning. External bank actions are disabled in this synthetic demo.</p><span class="pill warn">Review only</span></div></div></section><section id="money" class="view"><div class="card"><div class="eyebrow">Money picture</div><h3>Accounts shaping the household</h3><div class="accounts" id="accounts"></div></div></section><section id="ask" class="view"><div class="card"><div class="eyebrow">Ask Covarify</div><h3>What would you like to understand?</h3><p class="muted">Live AI is intentionally disabled here. These responses are deterministic and use only the synthetic household.</p><div class="askbox"><input id="question" placeholder="Try: How much cash do I have available?"><button class="action" onclick="ask()">Ask</button></div><div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><button class="secondary" onclick="quick('How much cash do I have available?')">Available cash</button><button class="secondary" onclick="quick('Which accounts are connected?')">Connected accounts</button><button class="secondary" onclick="quick('Can we afford the family trip?')">Family trip</button></div><div id="answer" class="answer"></div></div></section><section id="decisions" class="view"><div class="stack" id="decisionList"></div></section><section id="you" class="view"><div class="grid"><div class="card"><div class="eyebrow">Household</div><h3>Carter Demo Household</h3><p>Morgan, Riley, Avery, and Quinn</p><p class="muted">Example Township, New Jersey - entirely fictional.</p><p><strong>What matters:</strong> preserve a meaningful emergency buffer, reduce expensive debt, fund the family trip without new card debt, and keep the next step clear.</p></div><div class="card"><div class="eyebrow">Financial Life Vault</div><h3>Synthetic documents</h3><div class="docs"><div class="doc"><div class="watermark">Synthetic demo document - not a real financial record</div><strong>DEMO Mortgage Statement</strong><div class="muted">Pioneer Demo Lending - $287,400 principal - 4.125%</div></div><div class="doc"><div class="watermark">Synthetic demo document - not a real financial record</div><strong>DEMO Auto Insurance Declarations</strong><div class="muted">Harbor Demo Protection - fictional annual coverage</div></div><div class="doc"><div class="watermark">Synthetic demo document - not a real financial record</div><strong>DEMO Employee Benefits Summary</strong><div class="muted">DEMO Employer A - fictional family benefits</div></div></div></div></div></section><div class="footer">Covarify synthetic reviewer build - standalone product walkthrough. Nothing on this page connects to Plaid, Supabase, OpenAI, AWS, Vercel runtime APIs, or founder accounts.</div></main><div id="modal" class="modal" onclick="if(event.target===this)hideTech()"><div class="panel"><button class="secondary" style="float:right" onclick="hideTech()">Close</button><div class="eyebrow">Current architecture</div><h2>What Brian is reviewing</h2><div class="stack"><div><strong>Consumer authentication:</strong> Supabase Auth handles identity and sessions.</div><div><strong>Primary application data:</strong> Supabase/PostgreSQL with owner-scoped RLS.</div><div><strong>Financial connectivity:</strong> Plaid - disabled in this standalone review.</div><div><strong>Application backend:</strong> Next.js on Vercel.</div><div><strong>Native application:</strong> Expo / React Native with Today, Money, Ask, Decisions, and You.</div><div><strong>Security boundaries:</strong> AWS KMS plus an isolated DynamoDB account-deletion/security authority path.</div><div><strong>Financial Life Vault:</strong> private Supabase Storage, owner-scoped metadata, signed retrieval, secure export.</div><div><strong>Product thesis:</strong> connect financial evidence to goals, decisions, documents, and human context so Covarify can identify what matters and recommend one clear next move.</div></div><h3>Review questions</h3><p class="muted">What is strong? What is fragile or overbuilt? What must be fixed before the first design partners? What can wait? Where are the biggest security and scaling risks? What would you simplify?</p></div></div><script>const accountData=[['Everyday Checking','Northstar Demo Bank','••1842','$8,420.56'],['Emergency Savings','Northstar Demo Bank','••7721','$18,750.00'],['Family Travel Savings','Northstar Demo Bank','••3380','$4,200.00'],['Rewards Credit','Harbor Demo Credit','••4242','$6,480.32 owed'],['Intro Rate Credit','Harbor Demo Credit','••1881','$1,225.10 owed'],['Home Mortgage','Pioneer Demo Lending','••9001','$287,400 owed'],['Family Auto Loan','Pioneer Demo Lending','••5510','$16,850 owed']];document.getElementById('accounts').innerHTML=accountData.map(a=>`<div class="account"><div><strong>${a[0]}</strong><div class="muted">${a[1]} · ${a[2]}</div></div><div class="amount">${a[3]}</div></div>`).join('');let decisions=[{id:'card',title:'Pay down the high-interest card while preserving our buffer',text:'Keep at least $18,000 in emergency savings and make a defined $750 extra payment to Rewards Credit before reassessing.',next:'Schedule the $750 payment, then review the next statement.',done:false},{id:'stream',title:'Close the obsolete streaming subscription',text:'Harbor Stream Classic is the older duplicate and no longer needed.',next:'Confirm no further charge appears.',done:true},{id:'trip',title:'Fund the family trip without new card debt',text:'$4,200 is already set aside toward a $6,000 target.',next:'Continue the $200 monthly travel transfer.',done:false},{id:'emergency',title:'Protect the emergency buffer',text:'$18,750 is currently saved toward a $30,000 target.',next:'Keep the $350 monthly transfer while retaining flexibility.',done:false}];function renderDecisions(){document.getElementById('decisionList').innerHTML=decisions.map(d=>`<div class="card decision ${d.done?'done':''}"><div><div class="eyebrow">${d.done?'Completed':'Active decision'}</div><h3>${d.title}</h3><p>${d.text}</p><p class="muted"><strong>Next:</strong> ${d.next}</p></div><button class="secondary" onclick="toggle('${d.id}')">${d.done?'Reopen':'Complete'}</button></div>`).join('')}function toggle(id){const d=decisions.find(x=>x.id===id);d.done=!d.done;renderDecisions()}function openDecision(id){document.querySelector('[data-view="decisions"]').click();setTimeout(()=>document.getElementById('decisionList').scrollIntoView({behavior:'smooth'}),50)}renderDecisions();document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));document.querySelectorAll('.view').forEach(x=>x.classList.remove('active'));b.classList.add('active');document.getElementById(b.dataset.view).classList.add('active')});function ask(){const q=document.getElementById('question').value.toLowerCase();let t='Covarify would use the connected financial picture, current decisions, evidence freshness, and user-confirmed context to answer this question. In this standalone review, live AI is disabled.';if(q.includes('cash')||q.includes('available'))t='<strong>About $31,370</strong> is held across checking, emergency savings, and travel savings. Not all of that is truly available to spend: the household has explicitly said the emergency buffer matters, and $4,200 is already earmarked for the family trip.';else if(q.includes('connected')||q.includes('accounts'))t='The synthetic household has <strong>7 accounts across 3 fictional institutions</strong>: checking, two savings accounts, two credit cards, a mortgage, and an auto loan. One lending connection carries a recoverable review warning.';else if(q.includes('trip')||q.includes('afford'))t='The trip target is <strong>$6,000</strong> and $4,200 is already saved, leaving a $1,800 gap. The current strategy is to keep the $200 monthly transfer while avoiding new credit-card debt and preserving the emergency buffer.';document.getElementById('answer').innerHTML=t;document.getElementById('answer').style.display='block'}function quick(q){document.getElementById('question').value=q;ask()}function showTech(){document.getElementById('modal').classList.add('open')}function hideTech(){document.getElementById('modal').classList.remove('open')}</script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Covarify - Brian Purnell Technical Review Demo</title>
+<meta name="description" content="Standalone synthetic Covarify product and technical review. No real accounts or network connections.">
+<link rel="stylesheet" href="/brian-review.css">
+</head>
+<body>
+<div class="synthetic-banner">SYNTHETIC REVIEW ENVIRONMENT <span>- no real people, accounts, documents, credentials, or bank connections</span></div>
+<div class="shell">
+  <header class="topbar">
+    <div class="brand" aria-label="Covarify Financial Clarity">
+      <div class="mark" aria-hidden="true"></div>
+      <div class="brand-copy"><strong>COVARIFY</strong><span>Financial Clarity - Understand what matters.</span></div>
+    </div>
+    <div class="top-actions">
+      <button class="btn ghost" id="printBtn">Print overview</button>
+      <button class="btn" id="resetBtn">Reset demo</button>
+      <button class="btn primary" data-open="technicalModal">Technical overview</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-main">
+      <p class="eyebrow">Brian Purnell - technical diligence snapshot</p>
+      <h1>See the financial life.<br>Understand the next move.</h1>
+      <p>This standalone walkthrough demonstrates Covarify's product direction with a completely fictional household. It runs locally in one file and makes zero network requests.</p>
+      <div class="hero-chips">
+        <span class="chip">Synthetic household</span>
+        <span class="chip">Decision-centered</span>
+        <span class="chip">Owner-scoped concept</span>
+        <span class="chip">No production access</span>
+      </div>
+    </div>
+    <aside class="review-card">
+      <h2>Review snapshot</h2>
+      <p>The Carter Demo Household has realistic accounts, transactions, obligations, decisions, goals, and Vault documents.</p>
+      <div class="review-grid">
+        <div class="mini-stat"><strong>7</strong><span>financial accounts</span></div>
+        <div class="mini-stat"><strong>18</strong><span>recurring patterns</span></div>
+        <div class="mini-stat"><strong>5</strong><span>active decisions</span></div>
+        <div class="mini-stat"><strong>3</strong><span>Vault documents</span></div>
+      </div>
+    </aside>
+  </section>
+
+  <section class="app-frame" aria-label="Covarify interactive product demo">
+    <div class="app-head">
+      <div class="app-head-title"><strong>Carter Demo Household</strong><span>As of August 30, 2026 - synthetic data</span></div>
+      <div class="status">Review ready</div>
+    </div>
+    <div class="app-grid">
+      <nav class="side-nav" aria-label="Covarify sections">
+        <button class="nav-btn active" data-screen="today"><span class="nav-icon">T</span>Today</button>
+        <button class="nav-btn" data-screen="money"><span class="nav-icon">M</span>Money</button>
+        <button class="nav-btn" data-screen="ask"><span class="nav-icon">A</span>Ask</button>
+        <button class="nav-btn" data-screen="decisions"><span class="nav-icon">D</span>Decisions</button>
+        <button class="nav-btn" data-screen="you"><span class="nav-icon">Y</span>You</button>
+      </nav>
+
+      <main class="main">
+        <section class="screen active" id="screen-today">
+          <div class="screen-head">
+            <div><p class="eyebrow">Today</p><h2>One clear step at a time.</h2><p>Covarify brings forward what matters without turning money into a panic list.</p></div>
+          </div>
+          <div class="metrics">
+            <div class="metric"><span>Available checking</span><strong>$7,980.56</strong><small>Northstar Demo Bank</small></div>
+            <div class="metric"><span>Emergency buffer</span><strong>$18,750</strong><small>$30,000 household target</small></div>
+            <div class="metric"><span>Today status</span><strong id="todayCount">3 open</strong><small>Decisions and confirmations</small></div>
+          </div>
+          <div class="grid-2">
+            <div>
+              <div class="card">
+                <span class="card-label">Recommended next step</span>
+                <h3>Pay $750 toward the high-interest card</h3>
+                <p>Keep at least $18,000 in emergency savings, then make one defined extra payment to Rewards Credit.</p>
+                <div class="next-step"><strong>Why this matters</strong><br><span class="small">The household wants debt progress without losing the cash buffer that helps them feel secure.</span></div>
+                <div class="action-row"><button class="action" data-jump-decision="high-interest-card">Review decision</button><button class="action" data-ask="What should I do next?">Ask Covarify</button></div>
+              </div>
+              <div class="card">
+                <span class="card-label">Goal progress</span>
+                <div class="row"><h3>Family trip</h3><strong>$4,200 / $6,000</strong></div>
+                <div class="progress"><i style="width:70%"></i></div>
+                <p>$1,800 remains. The current $200 monthly transfer closes the gap in about nine months without new card debt.</p>
+              </div>
+            </div>
+            <div>
+              <div class="card">
+                <span class="card-label">What needs attention</span>
+                <div class="todo-list" style="margin-top:12px">
+                  <div class="todo" id="todo-stream"><span class="todo-dot"></span><div><strong>Confirm duplicate streaming cleanup</strong><span>Harbor Stream Classic - $12.99 monthly</span></div><button class="action" data-toggle-decision="duplicate-streaming">Mark done</button></div>
+                  <div class="todo"><span class="todo-dot"></span><div><strong>Review a stale savings balance</strong><span>Family Travel Savings last updated 7 days ago</span></div><button class="action" data-nav="money">View</button></div>
+                  <div class="todo"><span class="todo-dot"></span><div><strong>Classify office-supply purchase</strong><span>Possible 60% freelance / 40% personal split</span></div><button class="action" data-ask="What is uncertain in my transactions?">Review</button></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="screen" id="screen-money">
+          <div class="screen-head">
+            <div><p class="eyebrow">Money</p><h2>Your financial picture.</h2><p>Accounts, obligations, and recent activity - with uncertainty shown instead of hidden.</p></div>
+          </div>
+          <div class="metrics">
+            <div class="metric"><span>Deposit balances</span><strong>$31,370.56</strong><small>Checking and savings</small></div>
+            <div class="metric"><span>Credit-card balances</span><strong>$7,705.42</strong><small>One card at 24.99% APR</small></div>
+            <div class="metric"><span>Secured loan balances</span><strong>$304,250</strong><small>Mortgage and auto loan</small></div>
+          </div>
+          <div class="accounts">
+            <button class="account" data-account="checking"><div class="account-top"><div><h3>Everyday Checking</h3><div class="mask">Northstar Demo Bank - 1842</div></div><span class="badge active">current</span></div><div class="balance">$8,420.56</div><div class="sub">$7,980.56 available</div></button>
+            <button class="account" data-account="emergency"><div class="account-top"><div><h3>Emergency Savings</h3><div class="mask">Northstar Demo Bank - 7721</div></div><span class="badge active">current</span></div><div class="balance">$18,750.00</div><div class="sub">62.5% of $30,000 target</div></button>
+            <button class="account" data-account="travel"><div class="account-top"><div><h3>Family Travel Savings</h3><div class="mask">Northstar Demo Bank - 3380</div></div><span class="badge active">review</span></div><div class="balance">$4,200.00</div><div class="sub warn">Balance timestamp is 7 days old</div></button>
+            <button class="account" data-account="rewards"><div class="account-top"><div><h3>Rewards Credit</h3><div class="mask">Harbor Demo Credit - 4242</div></div><span class="badge active">24.99%</span></div><div class="balance">$6,480.32</div><div class="sub">$15,000 limit - 43.2% utilization</div></button>
+            <button class="account" data-account="intro"><div class="account-top"><div><h3>Intro Rate Credit</h3><div class="mask">Harbor Demo Credit - 1881</div></div><span class="badge active">0% promo</span></div><div class="balance">$1,225.10</div><div class="sub">$8,000 limit</div></button>
+            <button class="account" data-account="mortgage"><div class="account-top"><div><h3>Home Mortgage</h3><div class="mask">Pioneer Demo Lending - 9001</div></div><span class="badge active">4.125%</span></div><div class="balance">$287,400.00</div><div class="sub">$2,490 monthly payment</div></button>
+            <button class="account" data-account="auto"><div class="account-top"><div><h3>Family Auto Loan</h3><div class="mask">Pioneer Demo Lending - 5510</div></div><span class="badge active">5.90%</span></div><div class="balance">$16,850.00</div><div class="sub">$478 monthly payment</div></button>
+          </div>
+          <div class="transactions">
+            <div class="tx"><div><strong>Pending - Juniper Family Market</strong><span>Groceries - pending</span></div><div class="amount">$63.18</div><div class="date"><span>Aug 30</span></div></div>
+            <div class="tx"><div><strong>DEMO Employer A Payroll</strong><span>Income - Morgan</span></div><div class="amount inflow">+$3,850.00</div><div class="date"><span>Aug 28</span></div></div>
+            <div class="tx"><div><strong>Travel savings transfer</strong><span>Internal transfer - not spending</span></div><div class="amount">$200.00</div><div class="date"><span>Aug 26</span></div></div>
+            <div class="tx"><div><strong>Harbor Demo Credit</strong><span>Rewards card payment</span></div><div class="amount">$920.00</div><div class="date"><span>Aug 25</span></div></div>
+            <div class="tx"><div><strong>Harbor Stream Classic</strong><span>Possible duplicate subscription</span></div><div class="amount">$12.99</div><div class="date"><span>Aug 21</span></div></div>
+          </div>
+        </section>
+
+        <section class="screen" id="screen-ask">
+          <div class="screen-head"><div><p class="eyebrow">Ask Covarify</p><h2>What would you like to understand?</h2><p>Typed, deterministic answers for this standalone review. Nothing is changed without an explicit action.</p></div></div>
+          <div class="ask-shell">
+            <div class="ask-history" id="askHistory">
+              <div class="ask-empty" id="askEmpty">
+                <h3>Ask about the synthetic household.</h3>
+                <p>Covarify answers from the visible financial picture, explains uncertainty, and points to one next step.</p>
+                <div class="starters">
+                  <button class="starter" data-ask="How much cash do I have available?">How much cash is available?</button>
+                  <button class="starter" data-ask="What were my biggest expenses?">Biggest expenses</button>
+                  <button class="starter" data-ask="Which accounts are connected?">Connected accounts</button>
+                  <button class="starter" data-ask="Can we afford the family trip?">Can we afford the trip?</button>
+                </div>
+              </div>
+            </div>
+            <div class="ask-compose">
+              <div class="ask-row"><input id="askInput" aria-label="Ask Covarify a question" placeholder="Ask a financial question"><button class="btn primary" id="askSend">Send</button></div>
+              <div class="ask-note">Standalone review - no OpenAI call, no network request, no production memory.</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="screen" id="screen-decisions">
+          <div class="screen-head"><div><p class="eyebrow">Decisions</p><h2>Turn understanding into follow-through.</h2><p>Each decision keeps the reason, tradeoff, and next step visible.</p></div></div>
+          <div class="decision-list" id="decisionList"></div>
+        </section>
+
+        <section class="screen" id="screen-you">
+          <div class="screen-head"><div><p class="eyebrow">You</p><h2>The household behind the numbers.</h2><p>Financial context matters because a technically optimal answer can still be wrong for the person.</p></div></div>
+          <div class="grid-2">
+            <div class="card">
+              <span class="card-label">Carter Demo Household</span>
+              <h3>Morgan, Riley, Avery, and Quinn</h3>
+              <p>Two-income household in Example Township, New Jersey. Strong income, real recurring commitments, and a desire for clarity without judgment.</p>
+              <div class="boundary"><strong>What matters:</strong> Preserve a meaningful cash buffer, reduce expensive debt, fund a family trip without new card debt, and focus on one clear step at a time.</div>
+            </div>
+            <div class="card">
+              <span class="card-label">Financial Life Vault</span>
+              <h3>Documents stay connected to the financial picture.</h3>
+              <p>Open the three synthetic documents below. Every page is visibly marked as a fictional demo record.</p>
+              <div class="action-row"><button class="action" data-scroll-vault>Open Vault</button></div>
+            </div>
+          </div>
+
+          <h3 style="margin:25px 0 10px">Financial Life Vault</h3>
+          <div class="vault-grid" id="vault">
+            <div class="doc"><div class="doc-icon">PDF</div><h3>DEMO Mortgage Statement</h3><p>Pioneer Demo Lending - obligation</p><div class="action-row"><button class="action" data-doc="mortgage">Open synthetic document</button></div></div>
+            <div class="doc"><div class="doc-icon">PDF</div><h3>DEMO Auto Insurance Declarations</h3><p>Harbor Demo Protection - protection</p><div class="action-row"><button class="action" data-doc="insurance">Open synthetic document</button></div></div>
+            <div class="doc"><div class="doc-icon">PDF</div><h3>DEMO Employee Benefits Summary</h3><p>DEMO Employer A - protection</p><div class="action-row"><button class="action" data-doc="benefits">Open synthetic document</button></div></div>
+          </div>
+
+          <h3 style="margin:25px 0 10px">Technical review</h3>
+          <div class="tech-grid">
+            <div class="tech-card"><strong>Current build</strong><span>Native five-tab product, authenticated financial data layer, transaction understanding, recurring commitments, Decisions, Today follow-through, and Financial Life Vault.</span></div>
+            <div class="tech-card"><strong>MVP beta push</strong><span>Complete the Living Strategy loop: discover what matters, ground a decision, name one next step, and carry it into Today.</span></div>
+            <div class="tech-card"><strong>Trust boundary</strong><span>Owner-scoped data access, private Vault storage, explicit uncertainty, and external-action gates. This standalone review contains no backend access at all.</span></div>
+            <div class="tech-card"><strong>Controlled launch</strong><span>Begin with 2-3 iPhone design partners after the trust and reliability gates pass, then widen deliberately.</span></div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <nav class="mobile-tabs" aria-label="Covarify mobile sections">
+      <button class="nav-btn active" data-screen="today"><span class="nav-icon">T</span>Today</button>
+      <button class="nav-btn" data-screen="money"><span class="nav-icon">M</span>Money</button>
+      <button class="nav-btn" data-screen="ask"><span class="nav-icon">A</span>Ask</button>
+      <button class="nav-btn" data-screen="decisions"><span class="nav-icon">D</span>Decisions</button>
+      <button class="nav-btn" data-screen="you"><span class="nav-icon">Y</span>You</button>
+    </nav>
+  </section>
+  <div class="footer">Covarify Brian Purnell Technical Review - September 2, 2026 - standalone synthetic snapshot</div>
+</div>
+
+<div class="modal" id="technicalModal" role="dialog" aria-modal="true" aria-labelledby="technicalTitle">
+  <div class="modal-card">
+    <div class="modal-head"><h2 id="technicalTitle">Covarify - current technical and MVP overview</h2><button class="close" data-close aria-label="Close">&times;</button></div>
+    <div class="modal-body">
+      <p class="eyebrow">What exists now</p>
+      <h2 style="margin-top:0">A real financial clarity product - not just a concept.</h2>
+      <p class="muted">The approved branch contains the native product foundation, real authentication and owner-scoped data contracts, financial understanding logic, Decisions, Today, Ask transport, and Financial Life Vault. This particular file is intentionally standalone so Brian can review the product safely today.</p>
+      <div class="stack">
+        <div class="stack-row"><strong>Web and API</strong><span>Next.js on Vercel</span></div>
+        <div class="stack-row"><strong>Native app</strong><span>Expo / React Native with Today, Money, Ask, Decisions, and You</span></div>
+        <div class="stack-row"><strong>Identity and data</strong><span>Supabase Auth, PostgreSQL, Row Level Security, private Supabase Storage</span></div>
+        <div class="stack-row"><strong>Financial connectivity</strong><span>Plaid, with controlled connection and sync boundaries</span></div>
+        <div class="stack-row"><strong>Intelligence</strong><span>Deterministic financial logic plus server-side OpenAI capabilities where explicitly enabled</span></div>
+        <div class="stack-row"><strong>Security authority</strong><span>AWS KMS and DynamoDB for isolated high-risk account-deletion controls</span></div>
+      </div>
+      <p class="eyebrow" style="margin-top:28px">New MVP beta push</p>
+      <div class="tech-grid">
+        <div class="tech-card"><strong>1. Discover</strong><span>Understand the user's goal, fear, obligation, or point of confusion.</span></div>
+        <div class="tech-card"><strong>2. Ground</strong><span>Connect the question to verified account, transaction, recurring, and document evidence.</span></div>
+        <div class="tech-card"><strong>3. Decide</strong><span>Make the tradeoff explicit and save the decision in durable structured state.</span></div>
+        <div class="tech-card"><strong>4. Follow through</strong><span>Bring the one next step into Today and recognize completion or changed context.</span></div>
+      </div>
+      <div class="boundary"><strong>Brian's review question:</strong> What is architecturally strong, what is fragile or overbuilt, what must be fixed before 2-3 design partners, what can wait, and what breaks first at 100, 1,000, and 10,000 users?</div>
+      <div class="boundary" style="border-color:var(--green);background:var(--green-soft)"><strong>Important:</strong> This standalone review is not the hosted production system. It has no Supabase session, Plaid token, OpenAI key, AWS credential, external API, or access to Tara's accounts.</div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="accountModal" role="dialog" aria-modal="true" aria-labelledby="accountTitle">
+  <div class="modal-card">
+    <div class="modal-head"><h2 id="accountTitle">Account details</h2><button class="close" data-close aria-label="Close">&times;</button></div>
+    <div class="modal-body" id="accountBody"></div>
+  </div>
+</div>
+
+<div class="modal" id="docModal" role="dialog" aria-modal="true" aria-labelledby="docTitle">
+  <div class="modal-card">
+    <div class="modal-head"><h2 id="docTitle">Synthetic document</h2><button class="close" data-close aria-label="Close">&times;</button></div>
+    <div class="modal-body" id="docBody"></div>
+  </div>
+</div>
+
+<script src="/brian-review.js"></script>
+</body>
+</html>
