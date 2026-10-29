@@ -10,7 +10,7 @@ Tara is the first contact at Covarum. Glenn is a collaborating financial advisor
 - An explicit OAI-SearchBot allowance and a link to the existing sitemap. A missing robots.txt was not itself a crawl block.
 - Questions and answers about conversion amounts, timing, Medicare premiums, income limits, RMDs, and when converting may be a poor fit. IRS and Social Security links support the technical explanations.
 - Structured organization, person, website, page, and FAQ information. The FAQ markup uses the same answer text visitors see. This does not guarantee citations or rich results.
-- “Book a Retirement Conversation” buttons that use Tara’s existing 30-minute Calendly event. No promise of a free analysis or joint attendance.
+- “Book a Retirement Conversation” buttons that use Tara’s existing Calendly event (currently a 20-minute introductory conversation). No promise of a free analysis or joint attendance.
 - UTM values carried from the entry page through the current tab into the shared header and client-booking buttons. Retirement pages use a retirement campaign default; other pages use a general website campaign default. Existing inbound campaign values take priority. Recruiting links keep their separate destination.
 - Only five marketing fields are retained in session storage. No new analytics service, CRM automation, or completed-booking measurement is configured.
 
@@ -49,3 +49,7 @@ Run `node --test tests/booking-attribution.test.mjs` with Node 22.18+ or Node 24
 - IRS conversion and contribution rules: https://www.irs.gov/taxtopics/tc309
 - IRS conversion guidance: https://www.irs.gov/publications/p590a
 - Social Security income used for IRMAA: https://secure.ssa.gov/POMS.nsf/lnx/0601101010
+
+## IndexNow
+
+A public ownership-verification text file is hosted at the domain root for IndexNow URL submissions to Bing and other participating search engines. This does not submit URLs to Google or prove that any page has been indexed. Verify the live file before submitting and record the actual HTTP response.
