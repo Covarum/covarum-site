@@ -1,4 +1,5 @@
 import type { PlanningFaq } from "../_lib/planning-faqs";
+import { businessDescription } from "../_lib/discovery-content";
 import { GLENN_ID, ORGANIZATION_ID, SITE_URL, TARA_ID, WEBSITE_ID } from "../_lib/search";
 
 function JsonLd({ value }: { value: Record<string, unknown> }) {
@@ -9,7 +10,7 @@ export function SiteIdentity() {
   return <JsonLd value={{
     "@context": "https://schema.org",
     "@graph": [
-      { "@type": "Organization", "@id": ORGANIZATION_ID, name: "Covarum", url: SITE_URL, logo: `${SITE_URL}/optimized-logo.png`, founder: { "@id": TARA_ID } },
+      { "@type": "Organization", "@id": ORGANIZATION_ID, name: "Covarum", description: businessDescription, url: SITE_URL, logo: `${SITE_URL}/optimized-logo.png`, founder: { "@id": TARA_ID }, sameAs: ["https://www.linkedin.com/company/covarum"] },
       { "@type": "Person", "@id": TARA_ID, name: "Tara Wallace", url: `${SITE_URL}/about`, jobTitle: "Financial Strategist | Founder, Covarum", worksFor: { "@id": ORGANIZATION_ID } },
       { "@type": "WebSite", "@id": WEBSITE_ID, name: "Covarum", url: SITE_URL, inLanguage: "en-US", publisher: { "@id": ORGANIZATION_ID } },
     ],

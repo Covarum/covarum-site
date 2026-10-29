@@ -7,6 +7,14 @@ function clean(value: unknown): string | undefined {
   return typeof value === "string" && value.trim() ? value.trim().slice(0, 200) : undefined;
 }
 
+// Infer only known assistant hosts. Do not label ordinary Bing/Google visits as AI.
+const ASSISTANT_HOSTS: ReadonlyArray<readonly [string, string]> = [
+  ["chatgpt.com", "chatgpt.com"], ["chat.openai.com", "chatgpt.com"],
+  ["claude.ai", "claude.ai"], ["claude.com", "claude.ai"],
+  ["perplexity.ai", "perplexity.ai"], ["gemini.google.com", "gemini.google.com"],
+  ["copilot.microsoft.com", "copilot.microsoft.com"],
+];
+
 export function resolveAttribution(search: string, referrer: string, stored: string | null): Attribution {
   const current: Attribution = {};
   const params = new URLSearchParams(search);
@@ -27,11 +35,12 @@ export function resolveAttribution(search: string, referrer: string, stored: str
   } catch { /* Invalid or unavailable session storage must not block booking. */ }
   if (Object.keys(current).length > 0) return current;
   try {
-    const host = new URL(referrer).hostname;
-    if (host === "chatgpt.com" || host === "chat.openai.com") {
-      return { utm_source: "chatgpt.com", utm_medium: "referral" };
-    }
-  } catch { /* Direct visits need no inferred referrer. */ }
+    const url = new URL(referrer);
+    if (url.protocol !== "https:" && url.protocol !== "http:") return current;
+    const host = url.hostname.toLowerCase();
+    const assistant = ASSISTANT_HOSTS.find(([domain]) => host === domain || host.endsWith(`.${domain}`));
+    if (assistant) return { utm_source: assistant[1], utm_medium: "referral" };
+  } catch { /* Direct visits and apps without referrers remain unattributed. */ }
   return current;
 }
 
