@@ -10,7 +10,7 @@ export function SiteIdentity() {
     "@context": "https://schema.org",
     "@graph": [
       { "@type": "Organization", "@id": ORGANIZATION_ID, name: "Covarum", url: SITE_URL, logo: `${SITE_URL}/optimized-logo.png`, founder: { "@id": TARA_ID } },
-      { "@type": "Person", "@id": TARA_ID, name: "Tara Wallace", url: `${SITE_URL}/about`, jobTitle: "Founder, Covarum", worksFor: { "@id": ORGANIZATION_ID } },
+      { "@type": "Person", "@id": TARA_ID, name: "Tara Wallace", url: `${SITE_URL}/about`, jobTitle: "Financial Strategist | Founder, Covarum", worksFor: { "@id": ORGANIZATION_ID } },
       { "@type": "WebSite", "@id": WEBSITE_ID, name: "Covarum", url: SITE_URL, inLanguage: "en-US", publisher: { "@id": ORGANIZATION_ID } },
     ],
   }} />;
