@@ -1,5 +1,12 @@
 import { INTRO_CALL_URL, JOIN_COVARUM_URL } from "./ctaLinks";
 import SiteHeader from "./_components/site-header";
+import { pageMetadata } from "./_lib/search";
+
+export const metadata = pageMetadata(
+  "Life Insurance, Annuities & Retirement Planning | Covarum",
+  "Clear guidance on life insurance, annuities, retirement income and Roth conversion decisions. Start with Tara Wallace at Covarum.",
+  "/",
+);
 
 const solutions = [
   {
