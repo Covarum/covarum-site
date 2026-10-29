@@ -35,9 +35,9 @@ export function resolveAttribution(search: string, referrer: string, stored: str
   return current;
 }
 
-export function bookingUrl(base: string, attribution: Attribution, topic: string): string {
+export function bookingUrl(base: string, attribution: Attribution, topic: string, campaign = "covarum-retirement"): string {
   const url = new URL(base);
-  url.searchParams.set("utm_campaign", "covarum-retirement");
+  url.searchParams.set("utm_campaign", campaign);
   url.searchParams.set("utm_content", topic);
   for (const key of UTM_KEYS) {
     const value = clean(attribution[key]);

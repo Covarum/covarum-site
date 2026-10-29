@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import type { AnchorHTMLAttributes } from "react";
 import { usePathname } from "next/navigation";
 import { ATTRIBUTION_KEY, bookingUrl, resolveAttribution } from "../_lib/booking-attribution";
 
@@ -19,13 +20,18 @@ export function AttributionCapture() {
   return null;
 }
 
-export default function BookingLink({ base, topic }: { base: string; topic: string }) {
-  const [href, setHref] = useState(() => bookingUrl(base, {}, topic));
+type BookingLinkProps = { base: string; topic?: string } & Omit<AnchorHTMLAttributes<HTMLAnchorElement>, "href" | "onClick">;
+
+export default function BookingLink({ base, topic, className = "primary-button", children = "Book a Retirement Conversation", ...attributes }: BookingLinkProps) {
+  const path = usePathname() || "/";
+  const content = topic || (path === "/" ? "home" : path.slice(1));
+  const campaign = path === "/roth-conversions" || path === "/retirement-planning" ? "covarum-retirement" : "covarum-website";
+  const [href, setHref] = useState(() => bookingUrl(base, {}, content, campaign));
   useEffect(() => {
-    setHref(bookingUrl(base, currentAttribution(), topic));
-  }, [base, topic]);
-  return <a className="primary-button" href={href} onClick={(event) => {
+    setHref(bookingUrl(base, currentAttribution(), content, campaign));
+  }, [base, content, campaign]);
+  return <a {...attributes} className={className} href={href} onClick={(event) => {
     // Keep a normal navigable link, including when storage or tracking is unavailable.
-    event.currentTarget.href = bookingUrl(base, currentAttribution(), topic);
-  }}>Book a Retirement Conversation</a>;
+    event.currentTarget.href = bookingUrl(base, currentAttribution(), content, campaign);
+  }}>{children}</a>;
 }
