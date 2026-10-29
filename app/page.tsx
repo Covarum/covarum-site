@@ -1,3 +1,4 @@
+import BookingLink from "./_components/booking-link";
 import { INTRO_CALL_URL } from "./ctaLinks";
 import SiteHeader from "./_components/site-header";
 import { pageMetadata } from "./_lib/search";
@@ -45,7 +46,7 @@ export default function Page() {
               <p>Start with a clearer picture of your life insurance, annuity options and retirement income priorities.</p>
             </div>
             <div className="hero-actions" style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
-              <a href={INTRO_CALL_URL} target="_blank" rel="noopener noreferrer" className="primary-button">Start Here</a>
+              <BookingLink base={INTRO_CALL_URL} target="_blank" rel="noopener noreferrer" className="primary-button">Start Here</BookingLink>
               <a href="/solutions" className="header-cta hero-secondary-cta" style={{ opacity: 0.7 }}>Explore Solutions</a>
             </div>
           </div>
@@ -78,7 +79,7 @@ export default function Page() {
           <div className="panel-label">Start here</div>
           <h2>You don&apos;t need a perfect plan. You just need the right one.</h2>
           <p>Start with a conversation and get clear on what makes sense for you, your family, and everything you&apos;re building.</p>
-          <div className="cta-action"><a href={INTRO_CALL_URL} target="_blank" rel="noopener noreferrer" className="primary-button">Start the Conversation</a></div>
+          <div className="cta-action"><BookingLink base={INTRO_CALL_URL} target="_blank" rel="noopener noreferrer" className="primary-button">Start the Conversation</BookingLink></div>
           <p className="planning-helper">Virtual conversations available. Insurance services and products are offered only where appropriately licensed and available.</p>
         </div></div>
       </section>

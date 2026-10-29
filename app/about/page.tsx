@@ -1,3 +1,4 @@
+import BookingLink from "../_components/booking-link";
 import { INTRO_CALL_URL, JOIN_COVARUM_URL } from "../ctaLinks";
 import SiteHeader from "../_components/site-header";
 import { AdvisorDisclosure } from "../_components/planning";
@@ -250,14 +251,14 @@ export default function AboutPage() {
             </p>
 
             <div className="cta-action">
-              <a
-                href={INTRO_CALL_URL}
+              <BookingLink
+                base={INTRO_CALL_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="primary-button"
               >
                 Start the Conversation
-              </a>
+              </BookingLink>
             </div>
           </div>
         </div>

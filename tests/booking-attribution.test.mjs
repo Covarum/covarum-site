@@ -50,3 +50,10 @@ test("booking preserves existing calendar settings and incoming campaign content
   assert.equal(url.searchParams.get("utm_content"), "original-content");
   assert.equal(url.searchParams.get("utm_term"), "Roth conversion");
 });
+
+test("general website booking links preserve source without labeling every visit retirement", () => {
+  const url = new URL(bookingUrl(calendar, { utm_source: "chatgpt.com" }, "home", "covarum-website"));
+  assert.equal(url.searchParams.get("utm_source"), "chatgpt.com");
+  assert.equal(url.searchParams.get("utm_campaign"), "covarum-website");
+  assert.equal(url.searchParams.get("utm_content"), "home");
+});
