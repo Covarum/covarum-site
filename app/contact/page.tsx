@@ -1,37 +1,11 @@
 import { INTRO_CALL_URL, JOIN_COVARUM_URL } from "../ctaLinks";
+import SiteHeader from "../_components/site-header";
 
 export default function ContactPage() {
   return (
     <main className="site-shell">
       {/* HEADER */}
-      <header className="site-header">
-        <div className="container header-inner">
-          <a href="/" className="header-brand header-brand-site">
-            <img
-              src="/optimized-logo.png"
-              alt="Covarum"
-              className="header-logo header-logo-site"
-            />
-          </a>
-
-          <nav className="nav">
-            <a href="/">Home</a>
-            <a href="/solutions">Solutions</a>
-            <a href="/about">About</a>
-            <a href="/join-covarum">Join Covarum</a>
-            <a href="/contact">Contact</a>
-          </nav>
-
-          <a
-            href={INTRO_CALL_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="header-cta"
-          >
-            Start the Conversation
-          </a>
-        </div>
-      </header>
+      <SiteHeader current="/contact" />
 
       {/* HERO */}
       <section className="hero">

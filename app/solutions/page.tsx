@@ -1,3 +1,5 @@
+import SiteHeader from "../_components/site-header";
+
 const solutions = [
   {
     title: "Life Insurance",
@@ -41,7 +43,9 @@ const solutions = [
   {
     title: "Retirement Planning",
     description:
-      "Build a thoughtful strategy around the life you want to protect and enjoy.",
+      "Explore retirement income, withdrawal decisions, and whether Roth-conversion analysis belongs in your plan.",
+    href: "/retirement-planning",
+    cta: "Explore retirement planning",
   },
   {
     title: "Business Solutions",
@@ -97,38 +101,7 @@ const cardCtaStyle = {
 export default function SolutionsPage() {
   return (
     <main className="site-shell">
-      <header className="site-header">
-        <div className="container header-inner">
-          <a href="/" style={{ display: "inline-flex", alignItems: "center" }}>
-            <img
-              src="/SVG-02.svg"
-              alt="Covarum"
-              style={{
-                height: "54px",
-                width: "auto",
-                display: "block",
-              }}
-            />
-          </a>
-
-          <nav className="nav">
-            <a href="/">Home</a>
-            <a href="/solutions">Solutions</a>
-            <a href="/about">About</a>
-            <a href="/team">Team</a>
-            <a href="/contact">Contact</a>
-          </nav>
-
-          <a
-            href="https://go.covarum.com/start-625573"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="header-cta"
-          >
-            Start the Conversation
-          </a>
-        </div>
-      </header>
+      <SiteHeader current="/solutions" />
 
       <section className="hero">
         <div className="hero-glow" />
@@ -240,6 +213,7 @@ export default function SolutionsPage() {
                     </div>
                   )}
                 </div>
+                {solution.title === "Retirement Planning" ? <p><a className="planning-text-link" href="/roth-conversions">Explore Roth conversions <span aria-hidden="true">→</span></a></p> : null}
               </div>
             ))}
           </div>

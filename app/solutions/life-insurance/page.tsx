@@ -148,14 +148,14 @@ export default function LifeInsurancePage() {
           <div className="insurance-hero-copy">
             <div className="eyebrow">Life Insurance Planning</div>
             <h1 className="hero-title">
-              What happens if you didn't walk through the door yesterday?
+              What happens if you didn&apos;t walk through the door yesterday?
             </h1>
             <p className="insurance-lead">
-              It's a hard question. But it's the right place to start.
+              It&apos;s a hard question. But it&apos;s the right place to start.
             </p>
             <p className="hero-copy insurance-hero-body">
               Life insurance is about making sure your family, your plans, and
-              everything you've built can continue without disruption.
+              everything you&apos;ve built can continue without disruption.
             </p>
 
             <div className="hero-actions insurance-hero-actions">
@@ -197,7 +197,7 @@ export default function LifeInsurancePage() {
               </div>
               <p className="insurance-emphasis">
                 If someone depends on you, or your income supports the life
-                you're building, you likely need coverage in place.
+                you&apos;re building, you likely need coverage in place.
               </p>
             </div>
           </aside>
@@ -278,7 +278,7 @@ export default function LifeInsurancePage() {
             <h3>Good. Most people do.</h3>
             <p>Does it still fit your life today?</p>
             <p>
-              We'll review it before recommending anything new.
+              We&apos;ll review it before recommending anything new.
             </p>
           </div>
         </div>
@@ -473,7 +473,7 @@ export default function LifeInsurancePage() {
               If something happened tomorrow, your family would have questions.
             </p>
             <p className="insurance-closing-copy">
-              This makes sure money isn't one of them.
+              This makes sure money isn&apos;t one of them.
             </p>
             <p className="insurance-closing-copy">
               The best time to structure this correctly is before you need it.

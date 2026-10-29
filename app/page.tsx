@@ -1,4 +1,5 @@
-import { INTRO_CALL_URL } from "./ctaLinks";
+import { INTRO_CALL_URL, JOIN_COVARUM_URL } from "./ctaLinks";
+import SiteHeader from "./_components/site-header";
 
 const solutions = [
   {
@@ -95,37 +96,10 @@ export default function Page() {
   return (
     <main className="site-shell">
       {/* HEADER WITH LOGO */}
-      <header className="site-header">
-        <div className="container header-inner">
-          <a href="/" className="header-brand header-brand-site">
-            <img
-              src="/optimized-logo.png"
-              alt="Covarum"
-              className="header-logo header-logo-site"
-            />
-          </a>
-
-          <nav className="nav">
-            <a href="/">Home</a>
-            <a href="/solutions">Solutions</a>
-            <a href="/about">About</a>
-            <a href="/join-covarum">Join Covarum</a>
-            <a href="/contact">Contact</a>
-          </nav>
-
-          <a
-            href={INTRO_CALL_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="header-cta"
-          >
-            Start the Conversation
-          </a>
-        </div>
-      </header>
+      <SiteHeader current="/" home />
 
       {/* HERO */}
-      <section className="hero hero-home">
+      <section className="hero">
         <div className="hero-glow" />
 
         <div className="container hero-grid">
@@ -140,13 +114,13 @@ export default function Page() {
 
             <div className="hero-copy" style={{ maxWidth: "560px" }}>
               <p>
-                Life has a funny way of making you think you're on track... right
-                before it tells you to "recalculate."
+                Life has a funny way of making you think you&apos;re on track... right
+                before it tells you to &quot;recalculate.&quot;
               </p>
               <p>
-                At Covarum, we don't just plan for where you're going - we help
-                protect you through the detours. After all, the unexpected isn't
-                the exception. It's part of the plan.
+                At Covarum, we don&apos;t just plan for where you&apos;re going - we help
+                protect you through the detours. After all, the unexpected isn&apos;t
+                the exception. It&apos;s part of the plan.
               </p>
             </div>
 
@@ -160,15 +134,16 @@ export default function Page() {
                 rel="noopener noreferrer"
                 className="primary-button"
               >
-                Start the Conversation
+                Start Here
               </a>
 
               <a
-                href="/about"
+                href="/solutions"
                 className="header-cta hero-secondary-cta"
                 style={{ opacity: 0.7 }}
               >
-                Learn More About Covarum
+                <span className="desktop-copy">Explore Solutions</span>
+                <span className="mobile-copy">Start the Conversation</span>
               </a>
             </div>
           </div>
@@ -226,6 +201,10 @@ export default function Page() {
         </div>
       </section>
 
+      <section className="section planning-home-feature">
+        <div className="container"><div className="planning-feature"><div><span className="panel-label">Retirement planning</span><h2>Approaching retirement—or rethinking the plan?</h2><p>Explore questions about retirement income, Roth conversions, and the decisions ahead.</p></div><a className="planning-text-link" href="/retirement-planning">Explore Retirement Planning <span aria-hidden="true">↗</span></a></div></div>
+      </section>
+
       {/* CTA SECTION */}
       <section id="contact" className="section section-bottom">
         <div className="container">
@@ -243,12 +222,12 @@ export default function Page() {
             </div>
 
             <h2>
-              You don't need a perfect plan. You just need the right one.
+              You don&apos;t need a perfect plan. You just need the right one.
             </h2>
 
             <p>
               Start with a conversation and get clear on what makes sense for
-              you, your family, and everything you're building.
+              you, your family, and everything you&apos;re building.
             </p>
 
             <div className="cta-action">

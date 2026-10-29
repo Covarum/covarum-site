@@ -1,37 +1,12 @@
 import { INTRO_CALL_URL, JOIN_COVARUM_URL } from "../ctaLinks";
+import SiteHeader from "../_components/site-header";
+import { AdvisorDisclosure } from "../_components/planning";
 
 export default function AboutPage() {
   return (
     <main className="site-shell">
       {/* HEADER */}
-      <header className="site-header">
-        <div className="container header-inner">
-          <a href="/" className="header-brand header-brand-site">
-            <img
-              src="/optimized-logo.png"
-              alt="Covarum"
-              className="header-logo header-logo-site"
-            />
-          </a>
-
-          <nav className="nav">
-            <a href="/">Home</a>
-            <a href="/solutions">Solutions</a>
-            <a href="/about">About</a>
-            <a href="/join-covarum">Join Covarum</a>
-            <a href="/contact">Contact</a>
-          </nav>
-
-          <a
-            href={INTRO_CALL_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="header-cta"
-          >
-            Start the Conversation
-          </a>
-        </div>
-      </header>
+      <SiteHeader current="/about" />
 
       {/* HERO */}
       <section className="hero">
@@ -82,7 +57,7 @@ export default function AboutPage() {
               marginBottom: "40px",
             }}
           >
-            Most people aren't lacking options. They're lacking clarity. Covarum
+            Most people aren&apos;t lacking options. They&apos;re lacking clarity. Covarum
             exists to make those decisions easier to understand, more personal,
             and more thoughtful from the start.
           </p>
@@ -173,8 +148,6 @@ export default function AboutPage() {
             <div style={{ marginTop: "20px" }}>
               <a
                 href={JOIN_COVARUM_URL}
-                target="_blank"
-                rel="noopener noreferrer"
                 style={{
                   fontSize: "0.8rem",
                   letterSpacing: "0.18em",
@@ -188,6 +161,10 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
+      </section>
+
+      <section className="section planning-about-feature">
+        <div className="container"><div className="planning-section-intro"><h2>Working together on retirement planning.</h2><p>Tara Wallace works with financial advisor Glenn Eckstut on retirement-planning opportunities, including Roth-conversion analysis. The collaboration gives people a place to begin with a focused question and consider how it connects with their broader retirement needs.</p><a className="planning-text-link" href="/retirement-planning">Explore Retirement Planning <span aria-hidden="true">→</span></a></div><AdvisorDisclosure /></div>
       </section>
 
       {/* BELIEFS */}
