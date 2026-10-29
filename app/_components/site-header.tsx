@@ -1,6 +1,13 @@
 import { clientInquiryUrl } from "../_lib/planning";
+
 export default function SiteHeader({ home = false, current }: { home?: boolean; current?: string }) {
-  const links = [["/", "Home"], ["/solutions", "Solutions"], ["/about", "About"], ["/join-covarum", "Join Covarum"], ["/contact", "Contact"]];
+  const links = [
+    ["/solutions/life-insurance", "Life Insurance"],
+    ["/solutions/annuities", "Annuities"],
+    ["/retirement-planning", "Retirement"],
+    ["/solutions", "Solutions"],
+    ["/about", "About"],
+  ];
   return <header className="site-header"><div className="container header-inner">
     <a href="/" className={`header-brand header-brand-mark ${home ? "header-brand-mark-home" : ""}`} aria-label="Covarum home">
       {/* eslint-disable-next-line @next/next/no-img-element */}
