@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: "Life Insurance, Annuities & Retirement Planning | Covarum",
   description: "Clear guidance on life insurance, annuities, retirement income and Roth conversion decisions. Start with Tara Wallace at Covarum.",
   openGraph: { siteName: "Covarum", type: "website", locale: "en_US" },
+  other: process.env.VERCEL_GIT_COMMIT_SHA ? { "covarum-source-revision": process.env.VERCEL_GIT_COMMIT_SHA } : {},
   icons: { icon: "/icon.png", shortcut: "/icon.png", apple: "/icon.png" }
 };
 

@@ -16,7 +16,7 @@ export function PlanningShell({ children }: { children: ReactNode }) {
   return <div className="site-shell">
     <a className="skip-link" href="#main-content">Skip to content</a><SiteHeader />
     <main id="main-content" className="planning-page">{children}</main>
-    <footer className="site-footer"><div className="container footer-inner"><div>Copyright 2026 Covarum</div><div className="footer-links"><a href="/solutions">Solutions</a><a href="/contact">Contact</a><a href="https://go.covarum.com/privacy-policy">Privacy Policy</a><a href="https://go.covarum.com/terms--conditions">Terms &amp; Conditions</a></div></div></footer>
+    <footer className="site-footer"><div className="container footer-inner"><div>Copyright 2026 Covarum</div><div className="footer-links"><a href="/solutions">Solutions</a><a href="/questions">Common Questions</a><a href="/contact">Contact</a><a href="https://go.covarum.com/privacy-policy">Privacy Policy</a><a href="https://go.covarum.com/terms--conditions">Terms &amp; Conditions</a></div></div></footer>
   </div>;
 }
 export function PlanningClose({ title, children, topic = "retirement-planning" }: { title: string; children: ReactNode; topic?: string }) {
