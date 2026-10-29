@@ -1,3 +1,4 @@
+import BookingLink from "../../_components/booking-link";
 import type { Metadata } from "next";
 import { INTRO_CALL_URL } from "../../ctaLinks";
 
@@ -131,14 +132,14 @@ export default function LifeInsurancePage() {
             <a href="/contact">Contact</a>
           </nav>
 
-          <a
-            href={INTRO_CALL_URL}
+          <BookingLink
+            base={INTRO_CALL_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="header-cta"
           >
             Start the Conversation
-          </a>
+          </BookingLink>
         </div>
       </header>
 
@@ -159,23 +160,23 @@ export default function LifeInsurancePage() {
             </p>
 
             <div className="hero-actions insurance-hero-actions">
-              <a
-                href={INTRO_CALL_URL}
+              <BookingLink
+                base={INTRO_CALL_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="primary-button"
               >
                 Schedule Your Complimentary Conversation
-              </a>
+              </BookingLink>
 
-              <a
-                href={INTRO_CALL_URL}
+              <BookingLink
+                base={INTRO_CALL_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="header-cta hero-secondary-cta"
               >
                 Review Your Coverage
-              </a>
+              </BookingLink>
             </div>
 
             <p className="insurance-trust-line">
@@ -416,14 +417,14 @@ export default function LifeInsurancePage() {
             </p>
             <p>The value is in knowing the difference.</p>
             <div className="insurance-action-row">
-              <a
-                href={INTRO_CALL_URL}
+              <BookingLink
+                base={INTRO_CALL_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="primary-button"
               >
                 Request a Coverage Review
-              </a>
+              </BookingLink>
             </div>
           </article>
         </div>
@@ -479,14 +480,14 @@ export default function LifeInsurancePage() {
               The best time to structure this correctly is before you need it.
             </p>
             <div className="cta-action">
-              <a
-                href={INTRO_CALL_URL}
+              <BookingLink
+                base={INTRO_CALL_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="primary-button"
               >
                 Start the Conversation
-              </a>
+              </BookingLink>
             </div>
             <p className="insurance-cta-trust-line">
               No pressure. Just clarity around what actually makes sense.

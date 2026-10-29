@@ -11,9 +11,12 @@ Tara is the first contact at Covarum. Glenn is a collaborating financial advisor
 - Questions and answers about conversion amounts, timing, Medicare premiums, income limits, RMDs, and when converting may be a poor fit. IRS and Social Security links support the technical explanations.
 - Structured organization, person, website, page, and FAQ information. The FAQ markup uses the same answer text visitors see. This does not guarantee citations or rich results.
 - “Book a Retirement Conversation” buttons that use Tara’s existing 30-minute Calendly event. No promise of a free analysis or joint attendance.
-- UTM values carried from the entry page through the current tab into planning-page booking buttons. Only five marketing fields are retained in session storage. No new analytics service, CRM automation, or completed-booking measurement is configured.
+- UTM values carried from the entry page through the current tab into the shared header and client-booking buttons. Retirement pages use a retirement campaign default; other pages use a general website campaign default. Existing inbound campaign values take priority. Recruiting links keep their separate destination.
+- Only five marketing fields are retained in session storage. No new analytics service, CRM automation, or completed-booking measurement is configured.
 
-These are source changes for review. They are not deployed by this change.
+The retirement discovery update was published on October 29, 2026. Desktop and 390-pixel phone-width browser checks passed for the retirement and Roth pages. The follow-up booking-link coverage change has passed the production build and eight attribution tests.
+
+Google Search Console submission and full analytics setup still require signed-in account access. Do not report either as completed until their provider confirms it.
 
 ## Content to build next
 

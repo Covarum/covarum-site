@@ -1,3 +1,4 @@
+import BookingLink from "./_components/booking-link";
 import { INTRO_CALL_URL, JOIN_COVARUM_URL } from "./ctaLinks";
 import SiteHeader from "./_components/site-header";
 import { pageMetadata } from "./_lib/search";
@@ -135,14 +136,14 @@ export default function Page() {
               className="hero-actions"
               style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}
             >
-              <a
-                href={INTRO_CALL_URL}
+              <BookingLink
+                base={INTRO_CALL_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="primary-button"
               >
                 Start Here
-              </a>
+              </BookingLink>
 
               <a
                 href="/solutions"
@@ -238,14 +239,14 @@ export default function Page() {
             </p>
 
             <div className="cta-action">
-              <a
-                href={INTRO_CALL_URL}
+              <BookingLink
+                base={INTRO_CALL_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="primary-button"
               >
                 Start the Conversation
-              </a>
+              </BookingLink>
             </div>
           </div>
         </div>
