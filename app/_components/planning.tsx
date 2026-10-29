@@ -1,8 +1,9 @@
 import type { ReactNode } from "react";
 import SiteHeader from "./site-header";
 import { clientInquiryUrl } from "../_lib/planning";
-export function ConversationButton() {
-  return <a className="primary-button" href={clientInquiryUrl}>Start the Conversation</a>;
+import BookingLink from "./booking-link";
+export function ConversationButton({ topic = "retirement-planning" }: { topic?: string }) {
+  return <BookingLink base={clientInquiryUrl} topic={topic} />;
 }
 export function AdvisorDisclosure() {
   return <div className="planning-disclosure">
@@ -18,6 +19,6 @@ export function PlanningShell({ children }: { children: ReactNode }) {
     <footer className="site-footer"><div className="container footer-inner"><div>Copyright 2026 Covarum</div><div className="footer-links"><a href="/solutions">Solutions</a><a href="/contact">Contact</a><a href="https://go.covarum.com/privacy-policy">Privacy Policy</a><a href="https://go.covarum.com/terms--conditions">Terms &amp; Conditions</a></div></div></footer>
   </div>;
 }
-export function PlanningClose({ title, children }: { title: string; children: ReactNode }) {
-  return <section className="section section-bottom"><div className="container"><div className="cta-box planning-close"><h2>{title}</h2><p>{children}</p><div className="cta-action"><ConversationButton /></div><p className="planning-helper">Start with Tara to discuss your questions and the next step.</p></div></div></section>;
+export function PlanningClose({ title, children, topic = "retirement-planning" }: { title: string; children: ReactNode; topic?: string }) {
+  return <section className="section section-bottom"><div className="container"><div className="cta-box planning-close"><h2>{title}</h2><p>{children}</p><div className="cta-action"><ConversationButton topic={topic} /></div><p className="planning-helper">Start with Tara to discuss your questions and the next step.</p></div></div></section>;
 }
