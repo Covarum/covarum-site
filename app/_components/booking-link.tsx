@@ -22,9 +22,12 @@ export function AttributionCapture() {
 
 type BookingLinkProps = { base: string; topic?: string } & Omit<AnchorHTMLAttributes<HTMLAnchorElement>, "href" | "onClick">;
 
-export default function BookingLink({ base, topic, className = "primary-button", children = "Book a Retirement Conversation", ...attributes }: BookingLinkProps) {
+export default function BookingLink({ base, topic, className = "primary-button", children, ...attributes }: BookingLinkProps) {
   const path = usePathname() || "/";
   const content = topic || (path === "/" ? "home" : path.slice(1));
+  const defaultLabel = topic === "annuities" || topic === "retirement-planning"
+    ? "Book a Retirement Conversation"
+    : topic === "roth-conversions" ? "Discuss Roth Conversion Planning" : "Start the Conversation";
   const campaign = path === "/roth-conversions" || path === "/retirement-planning" ? "covarum-retirement" : "covarum-website";
   const [href, setHref] = useState(() => bookingUrl(base, {}, content, campaign));
   useEffect(() => {
@@ -33,5 +36,5 @@ export default function BookingLink({ base, topic, className = "primary-button",
   return <a {...attributes} className={className} href={href} onClick={(event) => {
     // Keep a normal navigable link, including when storage or tracking is unavailable.
     event.currentTarget.href = bookingUrl(base, currentAttribution(), content, campaign);
-  }}>{children}</a>;
+  }}>{children ?? defaultLabel}</a>;
 }
