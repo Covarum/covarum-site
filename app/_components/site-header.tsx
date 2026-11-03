@@ -8,7 +8,6 @@ import styles from "./site-header.module.css";
 
 const mainLinks = [
   ["/solutions/life-insurance", "Life Insurance"],
-  ["/solutions/annuities", "Annuities"],
   ["/retirement-planning", "Retirement"],
   ["/solutions", "Solutions"],
   ["/questions", "Questions"],

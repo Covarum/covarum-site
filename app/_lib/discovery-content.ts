@@ -1,4 +1,4 @@
-export const businessDescription = "Covarum helps individuals, families and business owners understand life insurance and annuity options and make clearer decisions about protection and retirement income.";
+export const businessDescription = "Covarum helps individuals, families and business owners with life insurance decisions and retirement income planning, including where appropriate the potential role of annuities.";
 
 export const discoveryQuestions = [
   {
@@ -45,7 +45,7 @@ export const discoveryQuestions = [
     id: "annuity-retirement-income",
     question: "Could an annuity help with retirement income?",
     answer: "An annuity is an insurance contract that may provide future accumulation, income payments or both, depending on its terms. Whether it fits depends on your spending needs, other income, time horizon and access to cash. Compare alternatives and contract restrictions before committing money; an annuity is not appropriate for everyone.",
-    href: "/solutions/annuities", linkLabel: "Understand annuity options",
+    href: "/retirement-planning", linkLabel: "Explore retirement income planning",
     source: { label: "Investor.gov: Annuities", url: "https://www.investor.gov/introduction-investing/investing-basics/investment-products/annuities" },
   },
   {

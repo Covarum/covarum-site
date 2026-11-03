@@ -4,8 +4,8 @@ import SiteHeader from "./_components/site-header";
 import { pageMetadata } from "./_lib/search";
 
 export const metadata = pageMetadata(
-  "Life Insurance, Annuities & Retirement Planning | Covarum",
-  "Clear guidance on life insurance, annuities, retirement income and Roth conversion decisions. Start with Tara Wallace at Covarum.",
+  "Life Insurance & Retirement Income Planning | Covarum",
+  "Explore life insurance, retirement income planning and Roth-conversion questions with Covarum. Understand where annuities may fit within the broader retirement picture.",
   "/",
 );
 
@@ -23,10 +23,10 @@ const priorities = [
     label: "Explore Life Insurance",
   },
   {
-    title: "Annuities, without the guesswork.",
-    description: "Understand whether an annuity belongs in your retirement income plan. Get clear on the benefits, costs and access to your money before making a commitment.",
-    href: "/solutions/annuities",
-    label: "Explore Annuities",
+    title: "Retirement income, without the guesswork.",
+    description: "How will savings become income? Explore Social Security, withdrawal timing and whether options such as annuities may belong in your retirement plan.",
+    href: "/retirement-planning",
+    label: "Explore Retirement Income Planning",
   },
 ];
 
@@ -38,12 +38,12 @@ export default function Page() {
         <div className="hero-glow" />
         <div className="container hero-grid">
           <div className="hero-left">
-            <div className="eyebrow">Life insurance. Annuities. Retirement planning.</div>
+            <div className="eyebrow">Life insurance. Retirement income. Roth planning.</div>
             <h1 className="hero-title">You do not need more options. You need clarity.</h1>
             <div className="hero-copy" style={{ maxWidth: "560px" }}>
               <p>Life has a funny way of making you think you&apos;re on track... right before it tells you to &quot;recalculate.&quot;</p>
               <p>At Covarum, we don&apos;t just plan for where you&apos;re going - we help protect you through the detours. After all, the unexpected isn&apos;t the exception. It&apos;s part of the plan.</p>
-              <p>Start with a clearer picture of your life insurance, annuity options and retirement income priorities.</p>
+              <p>Start with a clearer picture of your life insurance needs and how your retirement income decisions fit together.</p>
             </div>
             <div className="hero-actions" style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
               <BookingLink base={INTRO_CALL_URL} target="_blank" rel="noopener noreferrer" className="primary-button">Start Here</BookingLink>
@@ -72,7 +72,7 @@ export default function Page() {
         </div>
       </section>
       <section className="section planning-home-feature">
-        <div className="container"><div className="planning-feature"><div><span className="panel-label">Retirement planning</span><h2>Approaching retirement - or rethinking the plan?</h2><p>Explore questions about retirement income, Roth conversions, and the decisions ahead.</p></div><a className="planning-text-link" href="/retirement-planning">Explore Retirement Planning <span aria-hidden="true">↗</span></a></div></div>
+        <div className="container"><div className="planning-feature"><div><span className="panel-label">Roth conversion planning</span><h2>Could a Roth conversion make sense before or during retirement?</h2><p>Explore how timing, taxes and retirement income may affect the decision.</p></div><a className="planning-text-link" href="/roth-conversions">Explore Roth Conversion Questions <span aria-hidden="true">↗</span></a></div></div>
       </section>
       <section id="contact" className="section section-bottom">
         <div className="container"><div className="cta-box">

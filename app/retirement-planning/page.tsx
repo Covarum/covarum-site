@@ -5,12 +5,12 @@ import { retirementFaqs } from "../_lib/planning-faqs";
 import { pageMetadata } from "../_lib/search";
 
 export const metadata = pageMetadata(
-  "Retirement Planning & Roth Conversion Decisions | Covarum",
-  "Retirement with clarity: connect income, Roth conversions, Social Security and withdrawal decisions. Start with Tara Wallace and collaborating advisor Glenn Eckstut.",
+  "Retirement Income & Roth Planning | Covarum",
+  "Plan retirement income with clarity: explore Social Security, withdrawal decisions, Roth conversions and whether annuities might fit. Start with Tara Wallace and collaborating advisor Glenn Eckstut.",
   "/retirement-planning",
 );
 const topics = [
-  ["Retirement income", "Understanding how savings, Social Security, pensions, and other income sources may work together."],
+  ["Retirement income", "Understand how savings, Social Security, pensions and potential income options such as annuities may work together, considering access to your money."],
   ["Roth conversions", "Exploring whether converting some retirement savings belongs in the plan."],
   ["Withdrawal decisions", "Considering which accounts to draw from, when, and how those decisions affect the broader picture."],
   ["Social Security and Medicare", "Understanding how benefit timing and income-related considerations connect with retirement decisions."],
@@ -26,12 +26,12 @@ export default function RetirementPlanningPage() {
   return <PlanningShell>
     <PlanningSchema path="/retirement-planning" name="Retirement Planning" faqs={retirementFaqs} />
     <section className="hero planning-hero"><div className="hero-glow" /><div className="container planning-hero-grid">
-      <div><div className="eyebrow">Retirement Planning</div><h1 className="hero-title">Retirement with clarity.</h1><div className="hero-copy"><p>Retirement brings a different set of questions. How will your savings become income? What role do taxes play? What changes when work slows down—and what needs to stay protected?</p><p>Start with the decisions in front of you and a conversation about how they fit together.</p></div><div className="planning-actions"><ConversationButton /><a href="/roth-conversions" className="planning-text-link">Explore Roth Conversions <span aria-hidden="true">↗</span></a></div></div>
+      <div><div className="eyebrow">Retirement Planning</div><h1 className="hero-title">Retirement with clarity.</h1><div className="hero-copy"><p>Retirement brings a different set of questions. How will your savings become income? What role do taxes play? What changes when work slows down—and what needs to stay protected?</p><p>Start with the decisions in front of you, including whether an annuity makes sense as one possible income tool—not as the starting point.</p></div><div className="planning-actions"><ConversationButton /><a href="/roth-conversions" className="planning-text-link">Explore Roth Conversions <span aria-hidden="true">↗</span></a></div></div>
       <aside className="planning-start-note" aria-label="Where to begin"><span className="panel-label">A place to begin</span><p className="planning-note-title">Your next chapter.<br />Your questions first.</p><p>A focused question is enough to start.</p><ul><li>Income and withdrawals</li><li>Roth-conversion decisions</li><li>The people you want to protect</li></ul></aside>
     </div></section>
     <section className="section planning-topics" aria-labelledby="topics-heading"><div className="container">
       <div className="planning-section-intro"><span className="panel-label">The broader picture</span><h2 id="topics-heading">The decisions are connected. Your planning should be, too.</h2><p>A question about one account can lead to a conversation about income, taxes, timing, or the people who depend on you. Looking at those connections helps put individual decisions in context.</p></div>
-      <div className="planning-topic-grid">{topics.map(([title, copy], i) => <article className="planning-topic" key={title}><span className="planning-index" aria-hidden="true">0{i + 1}</span><h3>{title}</h3><p>{copy}</p>{title === "Roth conversions" ? <a className="planning-text-link" href="/roth-conversions">Explore the tradeoffs <span aria-hidden="true">→</span></a> : null}</article>)}</div><p className="planning-helper">These are topics we may discuss. The next step and scope depend on your questions and circumstances.</p>
+      <div className="planning-topic-grid">{topics.map(([title, copy], i) => <article className="planning-topic" key={title}><span className="planning-index" aria-hidden="true">0{i + 1}</span><h3>{title}</h3><p>{copy}</p>{title === "Roth conversions" ? <a className="planning-text-link" href="/roth-conversions">Explore the tradeoffs <span aria-hidden="true">→</span></a> : title === "Retirement income" ? <a className="planning-text-link" href="/solutions/annuities">How annuities may fit <span aria-hidden="true">→</span></a> : null}</article>)}</div><p className="planning-helper">These are topics we may discuss. The next step and scope depend on your questions and circumstances.</p>
     </div></section>
     <section className="section planning-feature-section"><div className="container"><div className="planning-feature"><div><span className="panel-label">A closer look</span><h2>Wondering whether a Roth conversion makes sense?</h2><p>It is a useful question to ask in the context of your income, savings, and retirement timeline. The starting point is understanding the tradeoffs and whether a conversion fits your circumstances.</p></div><a href="/roth-conversions" className="header-cta">Explore Roth Conversions <span aria-hidden="true">↗</span></a></div></div></section>
     <section className="section" aria-labelledby="people-heading"><div className="container">
