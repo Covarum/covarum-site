@@ -1,3 +1,4 @@
+import SiteHeader from "../../_components/site-header";
 import BookingLink from "../../_components/booking-link";
 import type { Metadata } from "next";
 import { INTRO_CALL_URL } from "../../ctaLinks";
@@ -112,36 +113,7 @@ const faqItems = [
 export default function LifeInsurancePage() {
   return (
     <main className="site-shell insurance-page">
-      <header className="site-header">
-        <div className="container header-inner">
-          <a href="/" className="header-brand header-brand-site">
-            <img
-              src="/optimized-logo.png"
-              alt="Covarum"
-              className="header-logo header-logo-site"
-            />
-          </a>
-
-          <nav className="nav">
-            <a href="/">Home</a>
-            <a href="/solutions" aria-current="page">
-              Solutions
-            </a>
-            <a href="/about">About</a>
-            <a href="/join-covarum">Join Covarum</a>
-            <a href="/contact">Contact</a>
-          </nav>
-
-          <BookingLink
-            base={INTRO_CALL_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="header-cta"
-          >
-            Start the Conversation
-          </BookingLink>
-        </div>
-      </header>
+      <SiteHeader current="/solutions/life-insurance" />
 
       <section className="hero solution-hero">
         <div className="hero-glow" />

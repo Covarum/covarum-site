@@ -1,0 +1,24 @@
+.header { z-index: 60; }
+.inner { position: relative; display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 18px 0; }
+.brand { display: inline-flex; flex: 0 0 auto; align-items: center; }
+.logo { display: block; width: auto; height: 72px; max-width: 190px; object-fit: contain; }
+.homeLogo { height: 100px; max-width: 210px; }
+.desktopNav { display: flex; align-items: center; justify-content: center; gap: 18px; font-size: .9rem; color: rgba(255,255,255,.76); }
+.desktopNav a { white-space: nowrap; padding: 12px 0; }
+.desktopNav a:hover, .desktopNav a[aria-current="page"] { color: white; text-decoration: underline; text-underline-offset: 6px; }
+.desktopCta { flex-shrink: 0; white-space: nowrap; }
+.mobileMenu { display: none; }
+.toggle { display: flex; align-items: center; justify-content: center; gap: 12px; min-height: 44px; padding: 10px 16px; border: 1px solid rgba(255,255,255,.2); border-radius: 14px; list-style: none; cursor: pointer; font-weight: 600; }
+.toggle::-webkit-details-marker { display: none; }
+.panel { position: absolute; right: 0; top: calc(100% - 2px); width: min(360px, calc(100vw - 32px)); max-height: calc(100dvh - 100px); overflow-y: auto; padding: 16px; border: 1px solid rgba(255,255,255,.18); border-radius: 20px; background: #0f1115; box-shadow: 0 20px 45px rgba(0,0,0,.4); }
+.panel nav { display: grid; gap: 4px; }
+.panel nav a { display: block; padding: 12px 14px; border-radius: 10px; color: rgba(255,255,255,.86); }
+.panel nav a:hover, .panel nav a[aria-current="page"] { background: rgba(255,255,255,.09); color: white; }
+.panel .mobileCta { display: flex; width: 100%; margin-top: 14px; font-size: .95rem; }
+@media (max-width: 1100px) {
+  .inner { gap: 16px; padding: 12px 0; }
+  .logo, .homeLogo { height: 60px; max-width: 200px; }
+  .desktopNav, .header .desktopCta { display: none; }
+  .mobileMenu { display: block; margin-left: auto; }
+}
+@media (max-width: 400px) { .logo, .homeLogo { max-width: 170px; height: 54px; } }

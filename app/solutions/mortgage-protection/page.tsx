@@ -1,7 +1,9 @@
-import type { Metadata } from "next";
+import BookingLink from "../../_components/booking-link";
+import { INTRO_CALL_URL } from "../../ctaLinks";
+import { pageMetadata } from "../../_lib/search";
+import SiteHeader from "../../_components/site-header";
 import styles from "./page.module.css";
 
-const bookingLink = "https://go.covarum.com/start-625573";
 
 const whyItMatters = [
   {
@@ -70,43 +72,16 @@ const faqs = [
   },
 ];
 
-export const metadata: Metadata = {
-  title: "Mortgage Protection | Covarum",
-  description:
-    "Protect your home and your family with mortgage protection planning built around real life. Covarum helps you review what you have, what is missing, and what actually matters.",
-};
+export const metadata = pageMetadata(
+  "Mortgage Protection & Life Insurance Review | Covarum",
+  "Review how life insurance can help protect your home and the people who matter to you. Understand existing coverage and discuss your next step with Covarum.",
+  "/solutions/mortgage-protection",
+);
 
 export default function MortgageProtectionPage() {
   return (
     <main className="site-shell">
-      <header className="site-header">
-        <div className="container header-inner">
-          <a href="/" className="header-brand">
-            <img
-              src="/SVG-01.svg"
-              alt="Covarum"
-              className="header-logo header-logo-subpage"
-            />
-          </a>
-
-          <nav className="nav">
-            <a href="/">Home</a>
-            <a href="/solutions">Solutions</a>
-            <a href="/about">About</a>
-            <a href="/team">Team</a>
-            <a href="/contact">Contact</a>
-          </nav>
-
-          <a
-            href={bookingLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="header-cta"
-          >
-            Start the Conversation
-          </a>
-        </div>
-      </header>
+      <SiteHeader current="/solutions/mortgage-protection" />
 
       <section className="hero">
         <div className="hero-glow" />
@@ -131,24 +106,24 @@ export default function MortgageProtectionPage() {
             </div>
 
             <div className={styles.heroActions}>
-              <a
-                href={bookingLink}
+              <BookingLink
+                base={INTRO_CALL_URL} topic="mortgage-protection"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="primary-button"
               >
                 Review Your Coverage
-              </a>
+              </BookingLink>
 
-              <a
-                href={bookingLink}
+              <BookingLink
+                base={INTRO_CALL_URL} topic="mortgage-protection"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="header-cta"
                 style={{ opacity: 0.78 }}
               >
                 Start the Conversation
-              </a>
+              </BookingLink>
             </div>
           </div>
 
@@ -317,24 +292,24 @@ export default function MortgageProtectionPage() {
             </p>
 
             <div className={styles.ctaActions}>
-              <a
-                href={bookingLink}
+              <BookingLink
+                base={INTRO_CALL_URL} topic="mortgage-protection"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="primary-button"
               >
                 Review Your Coverage
-              </a>
+              </BookingLink>
 
-              <a
-                href={bookingLink}
+              <BookingLink
+                base={INTRO_CALL_URL} topic="mortgage-protection"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="header-cta"
                 style={{ opacity: 0.8 }}
               >
                 Start the Conversation
-              </a>
+              </BookingLink>
             </div>
           </div>
         </div>
