@@ -67,7 +67,7 @@
 
 .supportCard {
   border-color: rgba(255, 255, 255, 0.08);
-  background: rgba(28, 42, 56, 0.26);
+  background: var(--card);
 }
 
 .supportCard h3 {
@@ -84,7 +84,7 @@
 .exampleCard,
 .faqCard {
   border-color: rgba(255, 255, 255, 0.08);
-  background: rgba(28, 42, 56, 0.26);
+  background: var(--card);
   padding: 24px 28px;
 }
 

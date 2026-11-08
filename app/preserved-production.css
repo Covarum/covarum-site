@@ -1,43 +1,5 @@
-/* Preserve existing live Join Covarum and Life Insurance page styling. */
-.join-page,
-.insurance-page {
-
-  --color-bg-primary: #0f1f3d;
-  --color-bg-secondary: #13264a;
-  --color-bg-depth: #1a315d;
-  --color-bg-soft: #203b70;
-  --color-text-primary: #ffffff;
-  --color-text-secondary: #e6eaf2;
-  --color-text-muted: #a7b4c8;
-  --color-accent-gold: #d8c39a;
-  --color-accent-gold-hover: #c6b49a;
-  --color-border-light: rgba(255, 255, 255, 0.1);
-  --color-border-gold: rgba(201, 169, 110, 0.25);
-  --bg: var(--color-bg-primary);
-  --panel: var(--color-bg-secondary);
-  --panel-strong: var(--color-bg-depth);
-  --card: var(--color-bg-secondary);
-  --border: var(--color-border-light);
-  --border-soft: var(--color-border-gold);
-  --text: var(--color-text-primary);
-  --text-soft: var(--color-text-secondary);
-  --text-faint: var(--color-text-muted);
-  --button-text: var(--color-bg-primary);
-  --white: var(--color-text-primary);
-  --font-sans:
-    "Aptos",
-    "Segoe UI",
-    "Helvetica Neue",
-    Arial,
-    sans-serif;
-  --font-display:
-    "Iowan Old Style",
-    "Palatino Linotype",
-    "Book Antiqua",
-    Georgia,
-    serif;
-
-}
+/* Preserve existing live Join Covarum and Life Insurance page styling.
+   Brand tokens are shared by every page through globals.css. */
 
 .join-page *,
 .insurance-page * {
