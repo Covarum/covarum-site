@@ -52,7 +52,7 @@ export default function JoinCovarumPage() {
         <div className="container header-inner">
           <a href="/" className="header-brand header-brand-site">
             <img
-              src="/optimized-logo.png"
+              src="/SVG-01.svg"
               alt="Covarum"
               className="header-logo header-logo-site"
             />
