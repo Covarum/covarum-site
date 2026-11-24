@@ -2380,3 +2380,8 @@
   
 }
 }
+
+/* Approved Covarum artwork size on legacy page headers; match the shared header. */
+.join-page .header-logo-site, .insurance-page .header-logo-site { display: block; width: 300px; height: auto; max-width: 100%; object-fit: contain; }
+@media (max-width: 760px) { .join-page .header-logo-site, .insurance-page .header-logo-site { width: 255px; max-width: calc(100vw - 36px); height: auto; } }
+@media (max-width: 360px) { .join-page .header-logo-site, .insurance-page .header-logo-site { width: 235px; } }
