@@ -11,6 +11,7 @@ const mainLinks = [
   ["/retirement-planning", "Retirement"],
   ["/solutions", "Solutions"],
   ["/questions", "Questions"],
+  ["/clarity/index.html", "Financial Tools"],
   ["/about", "About"],
 ];
 const mobileLinks = [...mainLinks, ["/roth-conversions", "Roth Conversions"], ["/contact", "Contact"]];
