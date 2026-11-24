@@ -61,6 +61,7 @@ export default function JoinCovarumPage() {
           <nav className="nav">
             <a href="/">Home</a>
             <a href="/solutions">Solutions</a>
+            <a href="/clarity/index.html">Financial Tools</a>
             <a href="/about">About</a>
             <a href="/join-covarum" aria-current="page">
               Join Covarum
